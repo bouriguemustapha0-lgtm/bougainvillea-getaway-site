@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Layout } from "@/components/Layout";
-import heroImg from "@/assets/hero-pool.jpg";
+import heroAsset from "@/assets/hero-dome.jpg.asset.json";
 import gardenImg from "@/assets/garden.jpg";
 import breakfastImg from "@/assets/breakfast.jpg";
 import roomImg from "@/assets/room.jpg";
@@ -79,8 +79,8 @@ function Home() {
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <img
-            src={heroImg}
-            alt="Bougainvilla Retreat outdoor pool at sunset, surrounded by bougainvillea and palms, Mohammedia Morocco"
+            src={heroAsset.url}
+            alt="Geodesic dome bungalow and swimming pool at Bougainvilla Retreat, Mohammedia Morocco"
             width={1920}
             height={1200}
             className="h-full w-full object-cover"
