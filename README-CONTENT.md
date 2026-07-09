@@ -1,45 +1,36 @@
-# Bougainvilla Retreat — content TODO before launch
+# Bougainvilla Guesthouse — content TODO before launch
 
 This site ships with `[ADD: ...]` placeholders anywhere real, verified data
 is required. Search the repo for `[ADD:` to find every instance.
 
+## Verified from Booking.com (already in `src/lib/site.ts`)
+
+- Property name: **Bougainvilla Guesthouse** (brand shown as "Bougainvilla Retreat")
+- Address: **Sidi Moussa Ben Ali, 20000, Morocco** (Mohammedia area, Casablanca-Settat)
+- Rating: **9.4 / 10 "Fabulous"** (9 reviews), Booking.com quality rating 4/5
+- Check-in **14:00–22:00** · Check-out **08:00–11:00**
+- Distances (© OpenStreetMap via Booking.com): CMN airport 43 km, Hassan II Mosque 23 km,
+  Morocco Mall 32 km, Royal Golf Club 16 km, Casa-Port / Casa-Voyageurs 20 km each,
+  Anfa Place 27 km, Central Market Casablanca 20 km
+- Amenities: outdoor pool, garden, sun terrace, free private parking, family rooms,
+  non-smoking, halal à la carte breakfast, AC + balcony + private shower in every room,
+  pets free on request, cots free (0–3), extra bed €17/night
+- 5 real guest quotes (Errahali, Mouna, Adam, Sophie, Angela) in `TESTIMONIALS`
+- Booking.com URL: `https://www.booking.com/hotel/ma/bougainvilla-guesthouse.html`
+- Google Hotels: search deep-link
+
 ## Must replace before launch
 
-- **NAP (Name/Address/Phone)** in `src/lib/site.ts`:
-  - `streetAddress`, `postalCode`
-  - `phone` (and `phoneHref` — set to real `tel:+212...` link)
-  - `email`
-  - `whatsapp` (real `https://wa.me/212...` number)
-  - `geo.lat` / `geo.lng` — refine to the exact property coordinates
-- **OTA URLs** in `src/lib/site.ts` (`SITE.ota.*`):
-  - Booking.com listing URL
-  - Airbnb listing URL
-  - Tripadvisor listing URL
-  - Agoda listing URL
-- **Real photography** in `src/assets/` — replace the rendered placeholders:
-  - `hero-pool.jpg`, `garden.jpg`, `room.jpg`, `breakfast.jpg`,
-    `terrace.jpg`, `exterior.jpg`
-  - Preserve descriptive, keyword-rich alt text (already present in JSX).
-- **Verified guest reviews** in `src/lib/site.ts` (`TESTIMONIALS`) —
-  replace `[ADD: ...]` quotes/names with actual, permitted reviews from
-  Booking.com / Airbnb / Tripadvisor.
-- **Pricing / cancellation** — currently marked `[ADD: ...]` on the Rooms
-  page. Leave it out or add per-OTA notes.
-- **Contact form** — the Contact page currently uses `mailto:`. Swap for a
-  hosted form service (Formspree, Web3Forms, Getform) before launch.
-
-## SEO / GEO
-
-- Sitewide title/description/og tags come from `src/routes/__root.tsx` and
-  each route's `head()`.
-- Structured data: `LodgingBusiness`, `FAQPage`, and `BreadcrumbList` JSON-LD
-  are emitted per route via `src/lib/schema.ts`.
-- Sitemap: `src/routes/sitemap[.]xml.ts` — set `BASE_URL` once a custom
-  domain is live.
-- `public/robots.txt` allows all crawlers by default.
-- Keep facts (distances, amenities, halal breakfast, pets) identical
-  across `src/lib/site.ts`, body copy, FAQ, and JSON-LD so AI answer
-  engines have a single confident source.
+- **Phone & email** in `src/lib/site.ts` (`phone`, `phoneHref`, `email`, `whatsapp`)
+- **Exact street** (Booking lists only "Sidi Moussa Ben Ali, 20000") + refined
+  `geo.lat` / `geo.lng` once confirmed
+- **OTA URLs** — `airbnb`, `tripadvisor`, `agoda` in `SITE.ota` (Booking + Google set)
+- **Real photography** in `src/assets/` — replace rendered placeholders
+  (`hero-pool.jpg`, `garden.jpg`, `room.jpg`, `breakfast.jpg`, `terrace.jpg`, `exterior.jpg`)
+  Real Booking.com photo IDs available at cf.bstatic.com/xdata/images/hotel/... — download
+  and save locally rather than hot-linking.
+- **Pricing / cancellation** — varies by OTA option; currently `[ADD: ...]` on Rooms page
+- **Contact form** — currently `mailto:`. Swap for Formspree / Web3Forms / Getform.
 
 ## Content freshness
 
