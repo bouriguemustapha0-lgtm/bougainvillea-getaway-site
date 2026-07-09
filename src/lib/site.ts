@@ -205,7 +205,7 @@ export const TESTIMONIALS = [
 
 export function bookingLinks() {
   return [
-    { label: "Book on Booking.com (9.4/10)", href: SITE.ota.booking, key: "booking" },
+    { label: "Book on Booking.com\u00a0", href: SITE.ota.booking, key: "booking" },
     { label: "Book on Agoda", href: SITE.ota.agoda, key: "agoda" },
   ];
 }
