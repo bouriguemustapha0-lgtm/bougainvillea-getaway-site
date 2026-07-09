@@ -11,7 +11,7 @@ export const Route = createFileRoute("/amenities")({
       {
         name: "description",
         content:
-          "Amenities at Bougainvilla Retreat, Mohammedia: infinity pool, kids' pool, landscaped garden, sun terrace, halal breakfast, free parking, kitchen units, and pet-friendly stays.",
+          "Amenities at Bougainvilla Retreat, Mohammedia: outdoor pool, kids' pool, landscaped garden, sun terrace, halal breakfast, free parking, and pet-friendly stays.",
       },
       { property: "og:title", content: `Amenities | ${SITE.name}` },
       { property: "og:description", content: "Pool, garden, halal breakfast, free parking, and more at Bougainvilla Retreat." },
@@ -35,7 +35,7 @@ function AmenitiesPage() {
     <Layout>
       <section className="relative isolate overflow-hidden border-b border-border">
         <div className="absolute inset-0 -z-10">
-          <img src={heroImg} alt="Infinity pool at Bougainvilla Retreat" width={1920} height={1200} className="h-full w-full object-cover" />
+          <img src={heroImg} alt="Outdoor pool at Bougainvilla Retreat" width={1920} height={1200} className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-black/45" />
         </div>
         <div className="container-page py-24 text-white">
