@@ -159,7 +159,7 @@ export const FAQS = [
   },
   {
     q: "Where can I book Bougainvilla Guesthouse?",
-    a: "You can book directly on Booking.com, where the guesthouse is rated 9.4/10 “Fabulous”. Use the Book Now buttons across this site to go straight to the listing.",
+    a: "You can book directly on Booking.com (rated 9.4/10 “Fabulous”) or on Agoda. Use the Book Now buttons across this site to go straight to each listing.",
   },
   {
     q: "Is Bougainvilla Guesthouse good for families?",
