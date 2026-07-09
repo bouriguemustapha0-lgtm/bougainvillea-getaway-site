@@ -86,7 +86,7 @@ function Home() {
                 "Landscaped garden with sun terrace",
                 "Halal à la carte breakfast",
                 "Balcony rooms with pool or garden views",
-                "Kitchen units available for longer stays",
+                "Free private parking, pets welcome on request",
                 "Free private parking on site",
               ].map((f) => (
                 <li key={f} className="flex items-start gap-3">
