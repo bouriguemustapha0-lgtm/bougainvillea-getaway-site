@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Instagram, Facebook } from "lucide-react";
 import { Layout } from "@/components/Layout";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { SITE, bookingLinks } from "@/lib/site";
 import { breadcrumbSchema, jsonLdScript, lodgingSchema } from "@/lib/schema";
 
@@ -63,7 +64,17 @@ function ContactPage() {
             </div>
             <div>
               <dt className="text-sm text-muted-foreground">WhatsApp</dt>
-              <dd><a href={SITE.whatsapp} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Chat with us</a></dd>
+              <dd>
+                <a
+                  href={SITE.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-primary hover:underline"
+                >
+                  <WhatsAppIcon className="h-4 w-4" />
+                  Chat with us
+                </a>
+              </dd>
             </div>
           </dl>
 
