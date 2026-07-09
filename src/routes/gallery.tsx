@@ -82,7 +82,7 @@ function GalleryPage() {
           <span className="eyebrow">Gallery</span>
           <h1 className="mt-3 font-display text-5xl md:text-6xl">A tour through the garden.</h1>
           <p className="mt-5 text-muted-foreground">
-            [ADD: replace these renderings with real property photography before launch.]
+            Real photographs from the guesthouse — pool at dusk, the bougainvillea facade, our rooms, and mornings in the garden.
           </p>
         </div>
       </section>
