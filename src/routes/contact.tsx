@@ -44,8 +44,8 @@ function ContactPage() {
           <span className="eyebrow">Contact</span>
           <h1 className="mt-3 font-display text-5xl md:text-6xl">Come stay with us.</h1>
           <p className="mt-5 text-muted-foreground">
-            For availability and rates, please book directly on Booking.com. For anything else —
-            pets, dietary needs, transfers — reach us on WhatsApp or by email.
+            For availability and rates, please book directly on Booking.com or Agoda. For anything
+            else — pets, dietary needs, transfers — reach us on WhatsApp or by email.
           </p>
         </div>
       </section>
