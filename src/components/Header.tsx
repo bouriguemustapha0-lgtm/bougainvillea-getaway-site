@@ -19,13 +19,12 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between gap-4">
         <Link to="/" className="flex min-w-0 items-center gap-2" aria-label={`${SITE.name} home`}>
-          <span
+          <img
+            src="/logo.png"
+            alt=""
             aria-hidden
-            className="grid h-8 w-8 shrink-0 place-items-center rounded-full"
-            style={{ background: "linear-gradient(135deg, var(--color-primary), var(--color-primary-glow))" }}
-          >
-            <span className="h-3 w-3 rounded-full bg-background" />
-          </span>
+            className="h-9 w-auto shrink-0 object-contain"
+          />
           <span className="truncate font-display text-xl leading-none">{SITE.name}</span>
         </Link>
 

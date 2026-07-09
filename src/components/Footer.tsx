@@ -6,7 +6,11 @@ export function Footer() {
     <footer className="mt-24 border-t border-border bg-secondary/40">
       <div className="container-page grid gap-10 py-14 md:grid-cols-4">
         <div>
-          <div className="font-display text-2xl">{SITE.name}</div>
+          <img
+            src="/logo.png"
+            alt={SITE.name}
+            className="h-10 w-auto object-contain"
+          />
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
             A boutique guesthouse in {SITE.neighborhood}, {SITE.city}, Morocco — with an outdoor
             pool, garden, and halal breakfast.
