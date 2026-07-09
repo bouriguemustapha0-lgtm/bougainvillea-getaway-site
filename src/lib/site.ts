@@ -14,10 +14,14 @@ export const SITE = {
   country: "Morocco",
   streetAddress: "Sidi Moussa Ben Ali",
   postalCode: "20000",
-  phone: "[ADD: +212 XXX XXX XXX]",
-  phoneHref: "tel:+212000000000",
-  email: "[ADD: hello@bougainvillaretreat.com]",
-  whatsapp: "https://wa.me/212000000000", // [ADD: real WhatsApp number]
+  phone: "+212 662-115504",
+  phoneHref: "tel:+212662115504",
+  email: "dareljawal@gmail.com",
+  whatsapp: "https://wa.me/212662115504",
+  social: {
+    instagram: "https://www.instagram.com/bougainvilla_wellness/",
+    facebook: "https://web.facebook.com/bougainvilla.casa/about/?_rdc=1&_rdr#",
+  },
   // Approximate coordinates for Sidi Moussa Ben Ali, Mohammedia region.
   geo: { lat: 33.6835, lng: -7.312 },
   rating: { value: 9.4, scale: 10, count: 9, label: "Fabulous", source: "Booking.com" },

@@ -21,7 +21,7 @@ is required. Search the repo for `[ADD:` to find every instance.
 
 ## Must replace before launch
 
-- **Phone & email** in `src/lib/site.ts` (`phone`, `phoneHref`, `email`, `whatsapp`)
+- ~~**Phone & email**~~ — now set to `+212 662-115504` and `dareljawal@gmail.com`
 - **Exact street** (Booking lists only "Sidi Moussa Ben Ali, 20000") + refined
   `geo.lat` / `geo.lng` once confirmed
 - **OTA URLs** — `airbnb`, `tripadvisor`, `agoda` in `SITE.ota` (Booking + Google set)

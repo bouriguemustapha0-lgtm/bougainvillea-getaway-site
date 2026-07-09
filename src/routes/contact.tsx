@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Instagram, Facebook } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SITE, bookingLinks } from "@/lib/site";
 import { breadcrumbSchema, jsonLdScript, lodgingSchema } from "@/lib/schema";
@@ -81,6 +82,28 @@ function ContactPage() {
                   {b.label}
                 </a>
               ))}
+            </div>
+
+            <h2 className="mt-12 font-display text-3xl">Follow us</h2>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <a
+                href={SITE.social.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline inline-flex items-center gap-2 text-sm"
+              >
+                <Instagram className="h-4 w-4" />
+                Instagram
+              </a>
+              <a
+                href={SITE.social.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline inline-flex items-center gap-2 text-sm"
+              >
+                <Facebook className="h-4 w-4" />
+                Facebook
+              </a>
             </div>
 
             <div className="mt-12 overflow-hidden rounded-2xl border border-border">
