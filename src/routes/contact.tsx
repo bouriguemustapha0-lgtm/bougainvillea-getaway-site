@@ -11,7 +11,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Contact Bougainvilla Retreat in Mohammedia — WhatsApp, email, and direct booking on Booking.com.",
+          "Contact Bougainvilla Retreat in Mohammedia — WhatsApp, email, and direct booking on Booking.com or Agoda.",
       },
       { property: "og:title", content: `Contact | ${SITE.name}` },
       { property: "og:description", content: "WhatsApp, email, and OTA booking links." },
