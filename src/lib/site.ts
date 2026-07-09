@@ -66,40 +66,44 @@ export const ROOMS = [
     slug: "garden-cottage",
     name: "Cottage — Garden View",
     blurb:
-      "A charming cottage-style room opening onto the bougainvillea garden, with one single bed and one large double bed, a private bathroom, air conditioning and a desk.",
+      "A cottage-style room opening onto the bougainvillea garden, with one single bed and one large double bed. Includes a private bathroom with shower, free toiletries and hair dryer, air conditioning, a desk, wardrobe and fresh bed linen.",
     features: [
       "1 single + 1 double bed",
       "Garden view",
       "Private bathroom (shower)",
+      "Free toiletries & hair dryer",
       "Air conditioning",
       "Desk & wardrobe",
-      "Free toiletries & hair dryer",
+      "Fresh bed linen",
     ],
   },
   {
     slug: "pool-view-room",
     name: "Pool-View Room",
     blurb:
-      "A bright room with a private balcony over the pool — perfect for a couples' escape from Casablanca. Air-conditioned, with private shower and fresh linen.",
+      "A bright room with a private balcony overlooking the pool — perfect for a couples' escape from Casablanca. Air-conditioned, with a private shower, free toiletries, hair dryer, desk, wardrobe and fresh bed linen.",
     features: [
-      "Balcony over the pool",
+      "Balcony with pool view",
       "Air conditioning",
       "Private bathroom (shower)",
+      "Free toiletries & hair dryer",
       "Desk & wardrobe",
-      "Fresh linen & towels",
+      "Fresh bed linen",
     ],
   },
   {
     slug: "family-room",
     name: "Family Room",
     blurb:
-      "A larger family-friendly room in the same garden setting. Cots are free on request; extra beds available at €17 per night.",
+      "A larger family-friendly room in the garden setting, with air conditioning, a private bathroom (shower, free toiletries, hair dryer), desk, wardrobe and fresh bed linen. Cots are free on request; extra beds available at €17 per night.",
     features: [
       "Family-friendly",
-      "Free cots on request",
-      "Extra bed €17/night",
       "Air conditioning",
       "Private bathroom (shower)",
+      "Free toiletries & hair dryer",
+      "Desk & wardrobe",
+      "Free cots on request",
+      "Extra bed €17/night",
     ],
   },
 ];
