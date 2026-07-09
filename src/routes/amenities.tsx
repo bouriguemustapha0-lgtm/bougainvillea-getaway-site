@@ -65,7 +65,7 @@ function AmenitiesPage() {
             <h2 className="font-display text-3xl">Good to know before you book</h2>
             <ul className="mt-6 grid gap-3 md:grid-cols-2">
               <li>Halal à la carte breakfast — local specialties, pancakes, cheese.</li>
-              <li>Grocery delivery on request for kitchen-unit stays.</li>
+              <li>Air conditioning, desk, and wardrobe in every room.</li>
               <li>Pets welcome on request — please contact us in advance.</li>
               <li>Free private parking on site.</li>
               <li>Walking tours in the Mohammedia area can be arranged.</li>
