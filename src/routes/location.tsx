@@ -2,18 +2,19 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Layout } from "@/components/Layout";
 import { SITE } from "@/lib/site";
 import { breadcrumbSchema, jsonLdScript } from "@/lib/schema";
+import { useT } from "@/i18n";
 
 export const Route = createFileRoute("/location")({
   head: () => ({
     meta: [
-      { title: `Location & Getting Here | ${SITE.name}, Mohammedia` },
+      { title: `Emplacement & Accès | ${SITE.name}, Mohammedia` },
       {
         name: "description",
         content:
-          "Bougainvilla Retreat is in Sidi Moussa Ben Ali, Mohammedia, about 43 km from Mohammed V Airport, 22 km from Hassan II Mosque, and near Miramar Beach.",
+          "Bougainvilla Retreat est à Sidi Moussa Ben Ali, Mohammedia, à environ 43 km de l'aéroport Mohammed V, 23 km de la mosquée Hassan II et proche de la plage de Miramar.",
       },
-      { property: "og:title", content: `Location | ${SITE.name}` },
-      { property: "og:description", content: "43 km from Casablanca airport, near Miramar Beach and Mohammedia Royal Golf Club." },
+      { property: "og:title", content: `Emplacement | ${SITE.name}` },
+      { property: "og:description", content: "À 43 km de l'aéroport de Casablanca, près de la plage de Miramar et du golf de Mohammedia." },
       { property: "og:url", content: "/location" },
     ],
     links: [{ rel: "canonical", href: "/location" }],
@@ -30,27 +31,24 @@ export const Route = createFileRoute("/location")({
 });
 
 function LocationPage() {
+  const t = useT();
+  const distances = t("distances");
   return (
     <Layout>
       <section className="border-b border-border bg-secondary/40 py-20">
         <div className="container-page max-w-3xl">
-          <span className="eyebrow">Location & Getting Here</span>
-          <h1 className="mt-3 font-display text-5xl md:text-6xl">
-            Sidi Moussa Ben Ali, Mohammedia — the calmer side of Casablanca.
-          </h1>
-          <p className="mt-5 text-lg text-muted-foreground">
-            Bougainvilla Retreat is in Mohammedia, in the Casablanca-Settat region, roughly a
-            40–50 minute drive from Mohammed V International Airport.
-          </p>
+          <span className="eyebrow">{t("location_eyebrow")}</span>
+          <h1 className="mt-3 font-display text-5xl md:text-6xl">{t("location_h1")}</h1>
+          <p className="mt-5 text-lg text-muted-foreground">{t("location_lead")}</p>
         </div>
       </section>
 
       <section className="section-pad">
         <div className="container-page grid gap-10 lg:grid-cols-[1fr_1.2fr]">
           <div>
-            <h2 className="font-display text-3xl">Distances</h2>
+            <h2 className="font-display text-3xl">{t("location_distances_title")}</h2>
             <dl className="mt-6 space-y-3">
-              {SITE.distances.map((d) => (
+              {distances.map((d) => (
                 <div key={d.label} className="flex items-baseline justify-between border-b border-border/60 pb-2">
                   <dt className="text-foreground">{d.label}</dt>
                   <dd className="font-medium text-primary">{d.value}</dd>
@@ -58,20 +56,20 @@ function LocationPage() {
               ))}
             </dl>
 
-            <h2 className="mt-12 font-display text-3xl">Getting here</h2>
+            <h2 className="mt-12 font-display text-3xl">{t("location_getting_title")}</h2>
             <ul className="mt-4 space-y-3 text-muted-foreground">
-              <li><strong className="text-foreground">From Mohammed V Airport (CMN):</strong> ~40–50 min by taxi or private transfer via the A3/A5 motorway.</li>
-              <li><strong className="text-foreground">From Casablanca city center:</strong> ~30–40 min by car via the coastal road or motorway.</li>
-              <li><strong className="text-foreground">By train:</strong> ONCF trains run frequently to Mohammedia station; take a short taxi to Sidi Moussa Ben Ali.</li>
-              <li><strong className="text-foreground">Parking:</strong> free private parking on site.</li>
+              {t("location_getting_items").map((item) => (
+                <li key={item.label}>
+                  <strong className="text-foreground">{item.label}</strong> {item.text}
+                </li>
+              ))}
             </ul>
 
-            <h2 className="mt-12 font-display text-3xl">Eat nearby</h2>
+            <h2 className="mt-12 font-display text-3xl">{t("location_eat_title")}</h2>
             <ul className="mt-4 grid gap-2 text-muted-foreground sm:grid-cols-2">
-              <li>Le Grill Robuchon</li>
-              <li>Marea (seafood)</li>
-              <li>Dar Zaki</li>
-              <li>Le Café Robuchon</li>
+              {t("location_eat_items").map((x) => (
+                <li key={x}>{x}</li>
+              ))}
             </ul>
           </div>
 
@@ -87,9 +85,7 @@ function LocationPage() {
                 className="block"
               />
             </div>
-            <p className="mt-4 text-sm text-muted-foreground">
-              Sidi Moussa Ben Ali, Mohammedia — roughly 43 km from Mohammed V Airport.
-            </p>
+            <p className="mt-4 text-sm text-muted-foreground">{t("location_map_caption")}</p>
           </div>
         </div>
       </section>
