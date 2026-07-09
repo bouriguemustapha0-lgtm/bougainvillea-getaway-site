@@ -10,7 +10,7 @@ export const Route = createFileRoute("/faq")({
       {
         name: "description",
         content:
-          "Frequently asked questions about Bougainvilla Retreat in Mohammedia: distance to Casablanca airport, pool, halal breakfast, pets, kitchen units, and booking.",
+          "Frequently asked questions about Bougainvilla Retreat in Mohammedia: distance to Casablanca airport, pool, halal breakfast, pets, and booking.",
       },
       { property: "og:title", content: `FAQ | ${SITE.name}` },
       { property: "og:description", content: "Answers about the pool, halal breakfast, distances, pets, and booking." },

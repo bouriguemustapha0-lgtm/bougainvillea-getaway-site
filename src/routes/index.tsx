@@ -37,7 +37,7 @@ function Home() {
         <div className="absolute inset-0 -z-10">
           <img
             src={heroImg}
-            alt="Bougainvilla Retreat infinity pool at sunset, surrounded by bougainvillea and palms, Mohammedia Morocco"
+            alt="Bougainvilla Retreat outdoor pool at sunset, surrounded by bougainvillea and palms, Mohammedia Morocco"
             width={1920}
             height={1200}
             className="h-full w-full object-cover"
@@ -50,7 +50,7 @@ function Home() {
             A bougainvillea-draped retreat, minutes from Casablanca.
           </h1>
           <p className="mt-6 max-w-xl text-lg text-white/90">
-            Bougainvilla Retreat is a boutique guesthouse in Sidi Moussa El Mejdoub, Mohammedia — an infinity
+            Bougainvilla Retreat is a boutique guesthouse in Sidi Moussa Ben Ali, Mohammedia — with an outdoor
             pool, landscaped garden, and halal breakfast, about 43 km from Casablanca's airport.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
@@ -82,11 +82,11 @@ function Home() {
             </p>
             <ul className="mt-6 grid gap-2 text-[15px]">
               {[
-                "Infinity pool & separate kids' pool",
+                "Outdoor pool",
                 "Landscaped garden with sun terrace",
                 "Halal à la carte breakfast",
                 "Balcony rooms with pool or garden views",
-                "Kitchen units available for longer stays",
+                "Free private parking, pets welcome on request",
                 "Free private parking on site",
               ].map((f) => (
                 <li key={f} className="flex items-start gap-3">
@@ -134,7 +134,7 @@ function Home() {
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
               <span className="eyebrow">Rooms & Suites</span>
-              <h2 className="mt-2 font-display text-4xl">Balcony rooms, garden views, kitchen suites</h2>
+              <h2 className="mt-2 font-display text-4xl">Balcony rooms, garden views</h2>
             </div>
             <Link to="/rooms" className="btn-outline">All rooms</Link>
           </div>
@@ -162,7 +162,7 @@ function Home() {
             <span className="eyebrow">Location</span>
             <h2 className="mt-2 font-display text-4xl">Mohammedia — 43 km from Casablanca's airport</h2>
             <p className="mt-4 text-muted-foreground">
-              Sidi Moussa El Mejdoub sits on Morocco's Atlantic coast between Casablanca and Rabat.
+              Sidi Moussa Ben Ali sits on Morocco's Atlantic coast between Casablanca and Rabat.
               You're close to Miramar Beach, the Mohammedia Royal Golf Club, and a short drive from
               Hassan II Mosque.
             </p>

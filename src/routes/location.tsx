@@ -10,7 +10,7 @@ export const Route = createFileRoute("/location")({
       {
         name: "description",
         content:
-          "Bougainvilla Retreat is in Sidi Moussa El Mejdoub, Mohammedia, about 43 km from Mohammed V Airport, 22 km from Hassan II Mosque, and near Miramar Beach.",
+          "Bougainvilla Retreat is in Sidi Moussa Ben Ali, Mohammedia, about 43 km from Mohammed V Airport, 22 km from Hassan II Mosque, and near Miramar Beach.",
       },
       { property: "og:title", content: `Location | ${SITE.name}` },
       { property: "og:description", content: "43 km from Casablanca airport, near Miramar Beach and Mohammedia Royal Golf Club." },
@@ -36,7 +36,7 @@ function LocationPage() {
         <div className="container-page max-w-3xl">
           <span className="eyebrow">Location & Getting Here</span>
           <h1 className="mt-3 font-display text-5xl md:text-6xl">
-            Sidi Moussa El Mejdoub, Mohammedia — the calmer side of Casablanca.
+            Sidi Moussa Ben Ali, Mohammedia — the calmer side of Casablanca.
           </h1>
           <p className="mt-5 text-lg text-muted-foreground">
             Bougainvilla Retreat is in Mohammedia, in the Casablanca-Settat region, roughly a
@@ -62,7 +62,7 @@ function LocationPage() {
             <ul className="mt-4 space-y-3 text-muted-foreground">
               <li><strong className="text-foreground">From Mohammed V Airport (CMN):</strong> ~40–50 min by taxi or private transfer via the A3/A5 motorway.</li>
               <li><strong className="text-foreground">From Casablanca city center:</strong> ~30–40 min by car via the coastal road or motorway.</li>
-              <li><strong className="text-foreground">By train:</strong> ONCF trains run frequently to Mohammedia station; take a short taxi to Sidi Moussa El Mejdoub.</li>
+              <li><strong className="text-foreground">By train:</strong> ONCF trains run frequently to Mohammedia station; take a short taxi to Sidi Moussa Ben Ali.</li>
               <li><strong className="text-foreground">Parking:</strong> free private parking on site.</li>
             </ul>
 

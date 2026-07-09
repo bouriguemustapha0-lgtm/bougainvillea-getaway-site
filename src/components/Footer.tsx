@@ -8,7 +8,7 @@ export function Footer() {
         <div>
           <div className="font-display text-2xl">{SITE.name}</div>
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
-            A boutique guesthouse in {SITE.neighborhood}, {SITE.city}, Morocco — with an infinity
+            A boutique guesthouse in {SITE.neighborhood}, {SITE.city}, Morocco — with an outdoor
             pool, garden, and halal breakfast.
           </p>
         </div>

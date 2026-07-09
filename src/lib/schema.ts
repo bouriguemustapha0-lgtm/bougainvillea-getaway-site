@@ -28,7 +28,14 @@ export function lodgingSchema() {
     })),
     petsAllowed: true,
     servesCuisine: "Moroccan",
-    starRating: undefined,
+    checkinTime: "14:00",
+    checkoutTime: "11:00",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: SITE.rating.value,
+      bestRating: SITE.rating.scale,
+      ratingCount: SITE.rating.count,
+    },
   };
 }
 

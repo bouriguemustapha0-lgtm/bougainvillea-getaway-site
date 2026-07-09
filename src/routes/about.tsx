@@ -11,7 +11,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "The story behind Bougainvilla Retreat — a boutique guesthouse in Mohammedia, Morocco, built around a bougainvillea garden, an infinity pool, and warm Moroccan hospitality.",
+          "The story behind Bougainvilla Retreat — a boutique guesthouse in Mohammedia, Morocco, built around a bougainvillea garden, an outdoor pool, and warm Moroccan hospitality.",
       },
       { property: "og:title", content: `About | ${SITE.name}` },
       { property: "og:description", content: "A boutique guesthouse in Mohammedia built around a bougainvillea garden and warm Moroccan hospitality." },
@@ -39,7 +39,7 @@ function AboutPage() {
             <span className="eyebrow">Our story</span>
             <h1 className="mt-3 font-display text-5xl md:text-6xl">Named for the flower that shaped it.</h1>
             <p className="mt-6 text-lg text-muted-foreground">
-              Bougainvilla Retreat began as a family home in Sidi Moussa El Mejdoub, Mohammedia — a
+              Bougainvilla Retreat began as a family home in Sidi Moussa Ben Ali, Mohammedia — a
               quiet neighborhood between Casablanca and Rabat. Over time the bougainvillea took over
               the walls, the pergola, the pathway to the pool. It felt like the flower was naming
               the place, so we let it.
@@ -47,7 +47,7 @@ function AboutPage() {
             <p className="mt-4 text-muted-foreground">
               Today it's a boutique guesthouse for travelers who want the ease of Casablanca —
               airport, Hassan II Mosque, Morocco Mall — without the intensity. Rooms open onto the
-              garden and the infinity pool. Breakfast is halal, à la carte, and served under the
+              garden and the outdoor pool. Breakfast is halal, à la carte, and served under the
               vines when the weather is right (it usually is).
             </p>
             <p className="mt-4 text-muted-foreground">
