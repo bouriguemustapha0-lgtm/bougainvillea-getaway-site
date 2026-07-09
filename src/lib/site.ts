@@ -37,6 +37,7 @@ export const SITE = {
   ],
   ota: {
     booking: "https://www.booking.com/hotel/ma/bougainvilla-guesthouse.html",
+    agoda: "https://www.agoda.com/bougainvilla-guesthouse/hotel/sidi-moussa-el-mejdoub-ma.html?cid=1844104&ds=qHOG3EwJJZvNdt%2B7",
   },
   lastUpdated: "2026-07-09",
 };
@@ -158,7 +159,7 @@ export const FAQS = [
   },
   {
     q: "Where can I book Bougainvilla Guesthouse?",
-    a: "You can book directly on Booking.com, where the guesthouse is rated 9.4/10 “Fabulous”. Use the Book Now buttons across this site to go straight to the listing.",
+    a: "You can book directly on Booking.com (rated 9.4/10 “Fabulous”) or on Agoda. Use the Book Now buttons across this site to go straight to each listing.",
   },
   {
     q: "Is Bougainvilla Guesthouse good for families?",
@@ -201,5 +202,6 @@ export const TESTIMONIALS = [
 export function bookingLinks() {
   return [
     { label: "Book on Booking.com (9.4/10)", href: SITE.ota.booking, key: "booking" },
+    { label: "Book on Agoda", href: SITE.ota.agoda, key: "agoda" },
   ];
 }

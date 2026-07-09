@@ -10,7 +10,15 @@ export function MobileBookBar() {
           rel="noopener noreferrer"
           className="btn-primary flex-1 text-sm"
         >
-          Book on Booking.com
+          Booking.com
+        </a>
+        <a
+          href={SITE.ota.agoda}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-terracotta flex-1 text-sm"
+        >
+          Agoda
         </a>
         <a
           href={SITE.whatsapp}

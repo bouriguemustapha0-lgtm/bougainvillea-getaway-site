@@ -15,7 +15,7 @@ export const Route = createFileRoute("/rooms")({
       {
         name: "description",
         content:
-          "Balcony rooms at Bougainvilla Retreat in Mohammedia, Morocco — pool or garden views, private bathrooms, and fresh linen. Book direct on Booking.com.",
+          "Balcony rooms at Bougainvilla Retreat in Mohammedia, Morocco — pool or garden views, private bathrooms, and fresh linen. Book direct on Booking.com or Agoda.",
       },
       { property: "og:title", content: `Rooms & Suites | ${SITE.name}` },
       { property: "og:description", content: "Balcony rooms with pool or garden views." },
