@@ -75,10 +75,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: defaultTitle },
       { name: "twitter:description", content: SITE.descriptionShort },
+      { title: "Bougainvilla" },
+      { property: "og:title", content: "Bougainvilla" },
+      { name: "twitter:title", content: "Bougainvilla" },
+      { name: "description", content: "Bougainvilla Retreat is a boutique guesthouse in Mohammedia, Morocco, about 43 km from Casablanca's Mohammed V Airport, featuring an infinity pool and garden." },
+      { property: "og:description", content: "Bougainvilla Retreat is a boutique guesthouse in Mohammedia, Morocco, about 43 km from Casablanca's Mohammed V Airport, featuring an infinity pool and garden." },
+      { name: "twitter:description", content: "Bougainvilla Retreat is a boutique guesthouse in Mohammedia, Morocco, about 43 km from Casablanca's Mohammed V Airport, featuring an infinity pool and garden." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/07ce3b5f-1cf5-4cd4-b6d0-3e8800bb486c/id-preview-7b3aa8f6--c0ee130d-b288-4aa8-9ed7-a0154438e51f.lovable.app-1783600317794.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/07ce3b5f-1cf5-4cd4-b6d0-3e8800bb486c/id-preview-7b3aa8f6--c0ee130d-b288-4aa8-9ed7-a0154438e51f.lovable.app-1783600317794.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       {
         rel: "stylesheet",
         href:
