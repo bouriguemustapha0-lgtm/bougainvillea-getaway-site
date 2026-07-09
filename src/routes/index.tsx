@@ -57,8 +57,8 @@ function Home() {
             <a href={SITE.ota.booking} target="_blank" rel="noopener noreferrer" className="btn-primary">
               Book on Booking.com
             </a>
-            <a href={SITE.ota.airbnb} target="_blank" rel="noopener noreferrer" className="btn-terracotta">
-              Book on Airbnb
+            <a href={SITE.whatsapp} target="_blank" rel="noopener noreferrer" className="btn-terracotta">
+              Chat on WhatsApp
             </a>
             <Link to="/rooms" className="btn-outline border-white/60 text-white hover:bg-white/10">
               Explore rooms

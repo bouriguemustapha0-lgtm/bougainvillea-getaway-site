@@ -37,10 +37,6 @@ export const SITE = {
   ],
   ota: {
     booking: "https://www.booking.com/hotel/ma/bougainvilla-guesthouse.html",
-    google: "https://www.google.com/travel/search?q=Bougainvilla+Retreat+Mohammedia",
-    airbnb: "[ADD: Airbnb listing URL]",
-    tripadvisor: "[ADD: Tripadvisor listing URL]",
-    agoda: "[ADD: Agoda listing URL]",
   },
   lastUpdated: "2026-07-09",
 };
@@ -162,7 +158,7 @@ export const FAQS = [
   },
   {
     q: "Where can I book Bougainvilla Guesthouse?",
-    a: "You can book on Booking.com (rated 9.4/10 “Fabulous”), Google Hotels, and — once listings go live — Airbnb, Tripadvisor and Agoda. Direct links are on the Book Now buttons across this site.",
+    a: "You can book directly on Booking.com, where the guesthouse is rated 9.4/10 “Fabulous”. Use the Book Now buttons across this site to go straight to the listing.",
   },
   {
     q: "Is Bougainvilla Guesthouse good for families?",
@@ -205,9 +201,5 @@ export const TESTIMONIALS = [
 export function bookingLinks() {
   return [
     { label: "Book on Booking.com (9.4/10)", href: SITE.ota.booking, key: "booking" },
-    { label: "View on Google Hotels", href: SITE.ota.google, key: "google" },
-    { label: "Book on Airbnb", href: SITE.ota.airbnb, key: "airbnb" },
-    { label: "Book on Tripadvisor", href: SITE.ota.tripadvisor, key: "tripadvisor" },
-    { label: "Book on Agoda", href: SITE.ota.agoda, key: "agoda" },
   ];
 }
