@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Layout } from "@/components/Layout";
 import heroImg from "@/assets/hero-pool.jpg";
@@ -30,6 +31,48 @@ export const Route = createFileRoute("/")({
 });
 
 function Home() {
+  useEffect(() => {
+    if (document.getElementById("hotel-jsonld")) return;
+
+    const hotelSchema = {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      name: SITE.name,
+      description: SITE.descriptionShort,
+      url: window.location.origin,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: SITE.city,
+        addressCountry: "MA",
+      },
+      amenityFeature: [
+        {
+          "@type": "LocationFeatureSpecification",
+          name: "Outdoor pool",
+          value: true,
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          name: "Sun terrace",
+          value: true,
+        },
+      ],
+    };
+
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "hotel-jsonld";
+    script.text = JSON.stringify(hotelSchema);
+    document.head.appendChild(script);
+
+    return () => {
+      const existing = document.getElementById("hotel-jsonld");
+      if (existing?.parentNode) {
+        existing.parentNode.removeChild(existing);
+      }
+    };
+  }, []);
+
   return (
     <Layout>
       {/* Hero */}
