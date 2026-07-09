@@ -42,9 +42,9 @@ function RoomsPage() {
           <span className="eyebrow">Rooms & Suites</span>
           <h1 className="mt-3 font-display text-5xl md:text-6xl">Balcony rooms, garden views</h1>
           <p className="mt-5 text-lg text-muted-foreground">
-            Every room at Bougainvilla Retreat opens onto a private balcony, either over the
-            pool or the bougainvillea garden. Bathrooms are private (shower + slippers), and linen &
-            towels are always provided.
+            Every room at Bougainvilla Retreat opens onto a private balcony with a pool or garden
+            view, and comes with air conditioning, a desk, wardrobe, fresh bed linen and a private
+            bathroom with shower, free toiletries and hair dryer.
           </p>
         </div>
       </section>
@@ -80,7 +80,7 @@ function RoomsPage() {
                   ))}
                 </div>
                 <p className="mt-4 text-xs text-muted-foreground">
-                  [ADD: nightly price / cancellation policy from OTA listings]
+                  Prices and cancellation terms are set by the booking platform.
                 </p>
               </div>
             </article>

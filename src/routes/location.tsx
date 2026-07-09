@@ -88,7 +88,7 @@ function LocationPage() {
               />
             </div>
             <p className="mt-4 text-sm text-muted-foreground">
-              [ADD: exact street address + Google Maps place link once available]
+              Sidi Moussa Ben Ali, Mohammedia — roughly 43 km from Mohammed V Airport.
             </p>
           </div>
         </div>
