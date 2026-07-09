@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Instagram, Facebook } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SITE, bookingLinks } from "@/lib/site";
 import { breadcrumbSchema, jsonLdScript, lodgingSchema } from "@/lib/schema";
