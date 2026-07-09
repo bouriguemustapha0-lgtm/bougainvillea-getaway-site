@@ -27,7 +27,7 @@ export function MobileBookBar() {
           aria-label="WhatsApp"
           className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-leaf text-leaf-foreground"
         >
-          <span aria-hidden>💬</span>
+          <WhatsAppIcon className="h-5 w-5" />
         </a>
       </div>
     </div>
