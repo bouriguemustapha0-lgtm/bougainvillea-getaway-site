@@ -42,7 +42,7 @@ function RoomsPage() {
           <span className="eyebrow">Rooms & Suites</span>
           <h1 className="mt-3 font-display text-5xl md:text-6xl">Balcony rooms, garden views</h1>
           <p className="mt-5 text-lg text-muted-foreground">
-            Every room at Bougainvilla Retreat opens onto a private balcony, either over the infinity
+            Every room at Bougainvilla Retreat opens onto a private balcony, either over the
             pool or the bougainvillea garden. Bathrooms are private (shower + slippers), and linen &
             towels are always provided.
           </p>

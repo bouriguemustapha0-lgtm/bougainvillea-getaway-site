@@ -11,7 +11,7 @@ export const Route = createFileRoute("/amenities")({
       {
         name: "description",
         content:
-          "Amenities at Bougainvilla Retreat, Mohammedia: outdoor pool, kids' pool, landscaped garden, sun terrace, halal breakfast, free parking, and pet-friendly stays.",
+          "Amenities at Bougainvilla Retreat, Mohammedia: outdoor pool, landscaped garden, sun terrace, halal breakfast, free parking, and pet-friendly stays.",
       },
       { property: "og:title", content: `Amenities | ${SITE.name}` },
       { property: "og:description", content: "Pool, garden, halal breakfast, free parking, and more at Bougainvilla Retreat." },
