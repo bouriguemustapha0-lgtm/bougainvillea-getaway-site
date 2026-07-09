@@ -1,5 +1,6 @@
 import { SITE } from "@/lib/site";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
+import { useT } from "@/i18n";
 
 export function MobileBookBar() {
   return (
