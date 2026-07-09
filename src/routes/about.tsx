@@ -3,18 +3,19 @@ import { Layout } from "@/components/Layout";
 import { SITE } from "@/lib/site";
 import { breadcrumbSchema, jsonLdScript } from "@/lib/schema";
 import exterior from "@/assets/exterior.jpg";
+import { useT } from "@/i18n";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: `About | ${SITE.name} — A Bougainvillea Garden Retreat` },
+      { title: `À propos | ${SITE.name} — Une retraite au jardin de bougainvilliers` },
       {
         name: "description",
         content:
-          "The story behind Bougainvilla Retreat — a boutique guesthouse in Mohammedia, Morocco, built around a bougainvillea garden, an outdoor pool, and warm Moroccan hospitality.",
+          "L'histoire de Bougainvilla Retreat — une maison d'hôtes de charme à Mohammedia, Maroc, autour d'un jardin de bougainvilliers, d'une piscine extérieure et d'une hospitalité marocaine chaleureuse.",
       },
-      { property: "og:title", content: `About | ${SITE.name}` },
-      { property: "og:description", content: "A boutique guesthouse in Mohammedia built around a bougainvillea garden and warm Moroccan hospitality." },
+      { property: "og:title", content: `À propos | ${SITE.name}` },
+      { property: "og:description", content: "Une maison d'hôtes de charme à Mohammedia, autour d'un jardin de bougainvilliers." },
       { property: "og:url", content: "/about" },
     ],
     links: [{ rel: "canonical", href: "/about" }],
@@ -31,33 +32,21 @@ export const Route = createFileRoute("/about")({
 });
 
 function AboutPage() {
+  const t = useT();
   return (
     <Layout>
       <section className="section-pad">
         <div className="container-page grid gap-12 lg:grid-cols-2 lg:items-center">
           <div>
-            <span className="eyebrow">Our story</span>
-            <h1 className="mt-3 font-display text-5xl md:text-6xl">Named for the flower that shaped it.</h1>
-            <p className="mt-6 text-lg text-muted-foreground">
-              Bougainvilla Retreat began as a family home in Sidi Moussa Ben Ali, Mohammedia — a
-              quiet neighborhood between Casablanca and Rabat. Over time the bougainvillea took over
-              the walls, the pergola, the pathway to the pool. It felt like the flower was naming
-              the place, so we let it.
-            </p>
-            <p className="mt-4 text-muted-foreground">
-              Today it's a boutique guesthouse for travelers who want the ease of Casablanca —
-              airport, Hassan II Mosque, Morocco Mall — without the intensity. Rooms open onto the
-              garden and the outdoor pool. Breakfast is halal, à la carte, and served under the
-              vines when the weather is right (it usually is).
-            </p>
-            <p className="mt-4 text-muted-foreground">
-              We keep things small on purpose. If you need groceries delivered, a pet welcomed, or a
-              walking tour arranged, just ask.
-            </p>
+            <span className="eyebrow">{t("about_eyebrow")}</span>
+            <h1 className="mt-3 font-display text-5xl md:text-6xl">{t("about_h1")}</h1>
+            <p className="mt-6 text-lg text-muted-foreground">{t("about_p1")}</p>
+            <p className="mt-4 text-muted-foreground">{t("about_p2")}</p>
+            <p className="mt-4 text-muted-foreground">{t("about_p3")}</p>
           </div>
           <img
             src={exterior}
-            alt="Facade of Bougainvilla Retreat covered in blooming bougainvillea, Mohammedia Morocco"
+            alt=""
             loading="lazy"
             width={1600}
             height={1100}
@@ -68,11 +57,7 @@ function AboutPage() {
 
       <section className="bg-secondary/40 section-pad">
         <div className="container-page grid gap-8 md:grid-cols-3">
-          {[
-            { h: "Warm hospitality", p: "Small enough to remember your name, big enough to have a proper pool." },
-            { h: "Halal breakfast", p: "À la carte breakfast with local specialties, pancakes, cheese, and mint tea." },
-            { h: "Garden-first design", p: "Every room looks onto the pool or the bougainvillea. The garden is the point." },
-          ].map((x) => (
+          {t("about_pillars").map((x) => (
             <div key={x.h}>
               <h2 className="font-display text-2xl">{x.h}</h2>
               <p className="mt-2 text-muted-foreground">{x.p}</p>
@@ -82,7 +67,7 @@ function AboutPage() {
       </section>
 
       <p className="container-page mt-10 text-xs text-muted-foreground">
-        Content last updated: {SITE.lastUpdated}.
+        {t("content_last_updated")} {SITE.lastUpdated}.
       </p>
     </Layout>
   );

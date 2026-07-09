@@ -1,20 +1,21 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { SITE } from "@/lib/site";
-
-const nav = [
-  { to: "/", label: "Home" },
-  { to: "/rooms", label: "Rooms" },
-  { to: "/amenities", label: "Amenities" },
-  { to: "/location", label: "Location" },
-  { to: "/gallery", label: "Gallery" },
-  { to: "/about", label: "About" },
-  { to: "/faq", label: "FAQ" },
-  { to: "/contact", label: "Contact" },
-];
+import { useT, LanguageSwitcher } from "@/i18n";
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const t = useT();
+  const nav = [
+    { to: "/", label: t("nav_home") },
+    { to: "/rooms", label: t("nav_rooms") },
+    { to: "/amenities", label: t("nav_amenities") },
+    { to: "/location", label: t("nav_location") },
+    { to: "/gallery", label: t("nav_gallery") },
+    { to: "/about", label: t("nav_about") },
+    { to: "/faq", label: t("nav_faq") },
+    { to: "/contact", label: t("nav_contact") },
+  ] as const;
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between gap-4">
@@ -42,24 +43,25 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:flex">
+        <div className="hidden items-center gap-3 md:flex">
+          <LanguageSwitcher />
           <a
             href={SITE.ota.booking}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary text-sm"
           >
-            Book Now
+            {t("book_now")}
           </a>
         </div>
 
         <button
           className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-md border border-border"
-          aria-label="Toggle menu"
+          aria-label={t("menu_label")}
           aria-expanded={open}
           onClick={() => setOpen((s) => !s)}
         >
-          <span className="sr-only">Menu</span>
+          <span className="sr-only">{t("menu_label")}</span>
           <div className="space-y-1.5">
             <span className="block h-0.5 w-5 bg-foreground" />
             <span className="block h-0.5 w-5 bg-foreground" />
@@ -83,13 +85,16 @@ export function Header() {
                 {n.label}
               </Link>
             ))}
+            <div className="px-3 pt-2">
+              <LanguageSwitcher />
+            </div>
             <a
               href={SITE.ota.booking}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary mt-2 text-sm"
             >
-              Book on Booking.com
+              {t("book_on_booking")}
             </a>
           </nav>
         </div>

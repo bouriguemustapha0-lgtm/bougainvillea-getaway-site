@@ -1,24 +1,25 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout } from "@/components/Layout";
-import { ROOMS, SITE, bookingLinks } from "@/lib/site";
+import { SITE } from "@/lib/site";
 import { breadcrumbSchema, jsonLdScript } from "@/lib/schema";
 import roomImg from "@/assets/room.jpg";
 import terraceImg from "@/assets/terrace.jpg";
 import gardenImg from "@/assets/garden.jpg";
+import { useT } from "@/i18n";
 
 const imgs = [roomImg, terraceImg, gardenImg];
 
 export const Route = createFileRoute("/rooms")({
   head: () => ({
     meta: [
-      { title: `Rooms & Suites | ${SITE.name}, Mohammedia` },
+      { title: `Chambres & Suites | ${SITE.name}, Mohammedia` },
       {
         name: "description",
         content:
-          "Balcony rooms at Bougainvilla Retreat in Mohammedia, Morocco — pool or garden views, private bathrooms, and fresh linen. Book direct on Booking.com or Agoda.",
+          "Chambres avec balcon à Bougainvilla Retreat, Mohammedia — vue piscine ou jardin, salle de bains privative et linge frais. Réservez en direct sur Booking.com ou Agoda.",
       },
-      { property: "og:title", content: `Rooms & Suites | ${SITE.name}` },
-      { property: "og:description", content: "Balcony rooms with pool or garden views." },
+      { property: "og:title", content: `Chambres & Suites | ${SITE.name}` },
+      { property: "og:description", content: "Chambres avec balcon, vues sur piscine ou jardin." },
       { property: "og:url", content: "/rooms" },
     ],
     links: [{ rel: "canonical", href: "/rooms" }],
@@ -35,27 +36,29 @@ export const Route = createFileRoute("/rooms")({
 });
 
 function RoomsPage() {
+  const t = useT();
+  const rooms = t("rooms");
+  const bookingLinks = [
+    { label: t("book_on_booking"), href: SITE.ota.booking, key: "booking" },
+    { label: t("book_on_agoda"), href: SITE.ota.agoda, key: "agoda" },
+  ];
   return (
     <Layout>
       <section className="border-b border-border bg-secondary/40 py-20">
         <div className="container-page max-w-3xl">
-          <span className="eyebrow">Rooms & Suites</span>
-          <h1 className="mt-3 font-display text-5xl md:text-6xl">Balcony rooms, garden views</h1>
-          <p className="mt-5 text-lg text-muted-foreground">
-            Every room at Bougainvilla Retreat opens onto a private balcony with a pool or garden
-            view, and comes with air conditioning, a desk, wardrobe, fresh bed linen and a private
-            bathroom with shower, free toiletries and hair dryer.
-          </p>
+          <span className="eyebrow">{t("home_rooms_eyebrow")}</span>
+          <h1 className="mt-3 font-display text-5xl md:text-6xl">{t("rooms_h1")}</h1>
+          <p className="mt-5 text-lg text-muted-foreground">{t("rooms_lead")}</p>
         </div>
       </section>
 
       <section className="section-pad">
         <div className="container-page space-y-16">
-          {ROOMS.map((r, i) => (
+          {rooms.map((r, i) => (
             <article key={r.slug} className={`grid gap-10 md:grid-cols-2 md:items-center ${i % 2 ? "md:[&>*:first-child]:order-2" : ""}`}>
               <img
                 src={imgs[i % imgs.length]}
-                alt={`${r.name} — ${SITE.name}, ${SITE.city}, Morocco`}
+                alt={`${r.name} — ${SITE.name}, ${SITE.city}`}
                 loading="lazy"
                 width={1600}
                 height={1100}
@@ -72,16 +75,14 @@ function RoomsPage() {
                   ))}
                 </ul>
                 <div className="mt-8 flex flex-wrap gap-3">
-                  {bookingLinks().map((b) => (
+                  {bookingLinks.map((b) => (
                     <a key={b.key} href={b.href} target="_blank" rel="noopener noreferrer"
                        className={b.key === "booking" ? "btn-primary text-sm" : "btn-outline text-sm"}>
                       {b.label}
                     </a>
                   ))}
                 </div>
-                <p className="mt-4 text-xs text-muted-foreground">
-                  Prices and cancellation terms are set by the booking platform.
-                </p>
+                <p className="mt-4 text-xs text-muted-foreground">{t("rooms_pricing_note")}</p>
               </div>
             </article>
           ))}
