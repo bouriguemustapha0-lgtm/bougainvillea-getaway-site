@@ -8,32 +8,46 @@ import room from "@/assets/room.jpg";
 import breakfast from "@/assets/breakfast.jpg";
 import terrace from "@/assets/terrace.jpg";
 import exterior from "@/assets/exterior.jpg";
+import roomTwin from "@/assets/room-twin.jpg";
+import lounge from "@/assets/lounge.jpg";
+import roomDetail from "@/assets/room-detail.jpg";
+import roomArt from "@/assets/room-art.jpg";
+import domeInterior from "@/assets/dome-interior.jpg";
+import poolUmbrella from "@/assets/pool-umbrella.jpg";
+import ducks from "@/assets/ducks.jpg";
 
 const groups: { title: string; items: { src: string; alt: string }[] }[] = [
   {
     title: "Pool & terrace",
     items: [
-      { src: hero, alt: "Infinity pool at sunset with bougainvillea and palms, Bougainvilla Retreat Mohammedia" },
-      { src: terrace, alt: "Sun terrace with loungers under a pergola at Bougainvilla Retreat" },
+      { src: hero, alt: "Outdoor pool at sunset with garden views, Bougainvilla Retreat Mohammedia" },
+      { src: poolUmbrella, alt: "Pool with straw umbrella at dusk, Bougainvilla Retreat" },
+      { src: terrace, alt: "Garden view over the countryside from the terrace at Bougainvilla Retreat" },
     ],
   },
   {
     title: "Garden",
     items: [
-      { src: garden, alt: "Bougainvillea-lined garden pathway at Bougainvilla Retreat" },
-      { src: exterior, alt: "Terracotta facade covered in bougainvillea, Bougainvilla Retreat entrance" },
+      { src: garden, alt: "Fountain in front of the bougainvillea-covered guesthouse, Bougainvilla Retreat" },
+      { src: exterior, alt: "Geodesic dome and lavender garden at Bougainvilla Retreat" },
+      { src: ducks, alt: "Ducks on the garden pond at Bougainvilla Retreat" },
     ],
   },
   {
     title: "Rooms",
     items: [
-      { src: room, alt: "Boutique guesthouse bedroom with balcony overlooking the pool, Bougainvilla Retreat" },
+      { src: room, alt: "Moroccan-styled bedroom with hand-painted art and woven wall decor" },
+      { src: roomTwin, alt: "Family room with twin beds and arched wall niches, Bougainvilla Retreat" },
+      { src: roomDetail, alt: "Upholstered headboard with woven palm-leaf wall piece" },
+      { src: roomArt, alt: "Bedroom with Moroccan horsemen artwork above the headboard" },
+      { src: domeInterior, alt: "Interior of the geodesic dome suite with Moroccan door" },
+      { src: lounge, alt: "Living lounge with green sofa and Moroccan alcove, Bougainvilla Retreat" },
     ],
   },
   {
     title: "Breakfast",
     items: [
-      { src: breakfast, alt: "Halal Moroccan breakfast served on the garden terrace at Bougainvilla Retreat" },
+      { src: breakfast, alt: "Bread baking over the outdoor wood fire at Bougainvilla Retreat" },
     ],
   },
 ];
