@@ -50,8 +50,9 @@ function Home() {
             A bougainvillea-draped retreat, minutes from Casablanca.
           </h1>
           <p className="mt-6 max-w-xl text-lg text-white/90">
-            Bougainvilla Retreat is a boutique guesthouse in Sidi Moussa Ben Ali, Mohammedia — with an outdoor
-            pool, landscaped garden, and halal breakfast, about 43 km from Casablanca's airport.
+            Tucked away in Sidi Moussa Ben Ali, Bougainvilla Retreat is where slow mornings begin by the pool,
+            jasmine and bougainvillea scent the garden paths, and every breakfast is made with care. Just 43 km
+            from Casablanca, yet a world away from the rush.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href={SITE.ota.booking} target="_blank" rel="noopener noreferrer" className="btn-primary">
