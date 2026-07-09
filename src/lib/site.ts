@@ -37,6 +37,7 @@ export const SITE = {
   ],
   ota: {
     booking: "https://www.booking.com/hotel/ma/bougainvilla-guesthouse.html",
+    agoda: "https://www.agoda.com/bougainvilla-guesthouse/hotel/sidi-moussa-el-mejdoub-ma.html?cid=1844104&ds=qHOG3EwJJZvNdt%2B7",
   },
   lastUpdated: "2026-07-09",
 };
