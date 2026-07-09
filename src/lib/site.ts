@@ -37,10 +37,6 @@ export const SITE = {
   ],
   ota: {
     booking: "https://www.booking.com/hotel/ma/bougainvilla-guesthouse.html",
-    google: "https://www.google.com/travel/search?q=Bougainvilla+Retreat+Mohammedia",
-    airbnb: "[ADD: Airbnb listing URL]",
-    tripadvisor: "[ADD: Tripadvisor listing URL]",
-    agoda: "[ADD: Agoda listing URL]",
   },
   lastUpdated: "2026-07-09",
 };
