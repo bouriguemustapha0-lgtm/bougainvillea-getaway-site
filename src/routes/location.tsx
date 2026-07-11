@@ -14,7 +14,11 @@ export const Route = createFileRoute("/location")({
           "Bougainvilla Retreat est à Sidi Moussa Ben Ali, Mohammedia, à environ 43 km de l'aéroport Mohammed V, 23 km de la mosquée Hassan II et proche de la plage de Miramar.",
       },
       { property: "og:title", content: `Emplacement | ${SITE.name}` },
-      { property: "og:description", content: "À 43 km de l'aéroport de Casablanca, près de la plage de Miramar et du golf de Mohammedia." },
+      {
+        property: "og:description",
+        content:
+          "À 43 km de l'aéroport de Casablanca, près de la plage de Miramar et du golf de Mohammedia.",
+      },
       { property: "og:url", content: "/location" },
     ],
     links: [{ rel: "canonical", href: "/location" }],
@@ -49,7 +53,10 @@ function LocationPage() {
             <h2 className="font-display text-3xl">{t("location_distances_title")}</h2>
             <dl className="mt-6 space-y-3">
               {distances.map((d) => (
-                <div key={d.label} className="flex items-baseline justify-between border-b border-border/60 pb-2">
+                <div
+                  key={d.label}
+                  className="flex items-baseline justify-between border-b border-border/60 pb-2"
+                >
                   <dt className="text-foreground">{d.label}</dt>
                   <dd className="font-medium text-primary">{d.value}</dd>
                 </div>

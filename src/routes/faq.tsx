@@ -14,7 +14,11 @@ export const Route = createFileRoute("/faq")({
           "Questions fréquentes sur Bougainvilla Retreat à Mohammedia : distance de l'aéroport de Casablanca, piscine, petit-déjeuner halal, animaux et réservation.",
       },
       { property: "og:title", content: `FAQ | ${SITE.name}` },
-      { property: "og:description", content: "Réponses sur la piscine, le petit-déjeuner halal, les distances, les animaux et la réservation." },
+      {
+        property: "og:description",
+        content:
+          "Réponses sur la piscine, le petit-déjeuner halal, les distances, les animaux et la réservation.",
+      },
       { property: "og:url", content: "/faq" },
     ],
     links: [{ rel: "canonical", href: "/faq" }],
@@ -56,7 +60,9 @@ function FaqPage() {
               </div>
             ))}
           </dl>
-          <p className="mt-10 text-xs text-muted-foreground">{t("last_updated")} {SITE.lastUpdated}.</p>
+          <p className="mt-10 text-xs text-muted-foreground">
+            {t("last_updated")} {SITE.lastUpdated}.
+          </p>
         </div>
       </section>
     </Layout>

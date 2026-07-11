@@ -235,7 +235,12 @@ const fr: Dict = {
     },
   ],
   location_eat_title: "Manger à proximité",
-  location_eat_items: ["Le Grill Robuchon", "Marea (fruits de mer)", "Dar Zaki", "Le Café Robuchon"],
+  location_eat_items: [
+    "Le Grill Robuchon",
+    "Marea (fruits de mer)",
+    "Dar Zaki",
+    "Le Café Robuchon",
+  ],
   location_map_caption:
     "Sidi Moussa Ben Ali, Mohammedia — à environ 43 km de l'aéroport Mohammed V.",
 
@@ -326,18 +331,45 @@ const fr: Dict = {
   footer_rights: "Tous droits réservés.",
 
   amenities: [
-    { title: "Piscine extérieure", desc: "Une piscine extérieure baignée de soleil, entourée de bougainvilliers et de palmiers." },
+    {
+      title: "Piscine extérieure",
+      desc: "Une piscine extérieure baignée de soleil, entourée de bougainvilliers et de palmiers.",
+    },
     { title: "Jardin paysager", desc: "Bougainvilliers, palmiers et allées ombragées à flâner." },
-    { title: "Terrasse ensoleillée", desc: "Transats sous une pergola pour des matinées lentes et de longues lectures." },
+    {
+      title: "Terrasse ensoleillée",
+      desc: "Transats sous une pergola pour des matinées lentes et de longues lectures.",
+    },
     { title: "Parking privé gratuit", desc: "Stationnement sécurisé sur place, sans supplément." },
-    { title: "Petit-déjeuner halal", desc: "Petit-déjeuner halal à la carte avec des spécialités locales." },
-    { title: "Chambres climatisées", desc: "Chaque chambre dispose de la climatisation et d'une armoire." },
+    {
+      title: "Petit-déjeuner halal",
+      desc: "Petit-déjeuner halal à la carte avec des spécialités locales.",
+    },
+    {
+      title: "Chambres climatisées",
+      desc: "Chaque chambre dispose de la climatisation et d'une armoire.",
+    },
     { title: "Balcon vue piscine", desc: "Chambres avec balcon privatif donnant sur la piscine." },
-    { title: "Salle de bains privative", desc: "Douche, articles de toilette gratuits et sèche-cheveux dans chaque chambre." },
-    { title: "Chambres familiales", desc: "Chambres adaptées aux familles ; lits bébé gratuits, lits supplémentaires 17 €/nuit." },
-    { title: "Animaux acceptés (gratuit)", desc: "Les animaux séjournent gratuitement sur demande — prévenez-nous à l'avance." },
-    { title: "Établissement non-fumeurs", desc: "Maison d'hôtes paisible, entièrement non-fumeurs." },
-    { title: "Linge et serviettes frais", desc: "Linge de lit, serviettes et articles de toilette fournis." },
+    {
+      title: "Salle de bains privative",
+      desc: "Douche, articles de toilette gratuits et sèche-cheveux dans chaque chambre.",
+    },
+    {
+      title: "Chambres familiales",
+      desc: "Chambres adaptées aux familles ; lits bébé gratuits, lits supplémentaires 17 €/nuit.",
+    },
+    {
+      title: "Animaux acceptés (gratuit)",
+      desc: "Les animaux séjournent gratuitement sur demande — prévenez-nous à l'avance.",
+    },
+    {
+      title: "Établissement non-fumeurs",
+      desc: "Maison d'hôtes paisible, entièrement non-fumeurs.",
+    },
+    {
+      title: "Linge et serviettes frais",
+      desc: "Linge de lit, serviettes et articles de toilette fournis.",
+    },
   ],
 
   rooms: [
@@ -388,30 +420,101 @@ const fr: Dict = {
   ],
 
   faqs: [
-    { q: "Où se trouve Bougainvilla Guesthouse ?", a: "Bougainvilla Guesthouse est à Sidi Moussa Ben Ali (code postal 20000), dans la région de Mohammedia (Casablanca-Settat), au Maroc." },
-    { q: "À quelle distance de l'aéroport de Casablanca ?", a: "La maison d'hôtes est à 43 km de l'aéroport international Mohammed V (CMN) de Casablanca — environ 40–50 minutes de route selon le trafic." },
-    { q: "Y a-t-il une piscine ?", a: "Oui. Une piscine extérieure au cœur d'un jardin paysager de bougainvilliers et de palmiers, avec une terrasse ensoleillée et des transats." },
-    { q: "Le petit-déjeuner est-il halal ?", a: "Oui. Le petit-déjeuner est halal et servi à la carte." },
-    { q: "Les animaux sont-ils acceptés ?", a: "Oui. Les animaux sont acceptés gratuitement sur demande — merci de prévenir la maison d'hôtes à l'avance." },
-    { q: "Quels sont les horaires d'arrivée et de départ ?", a: "L'arrivée se fait de 14h00 à 22h00 et le départ de 08h00 à 11h00." },
-    { q: "À quelle distance de la mosquée Hassan II ?", a: "La mosquée Hassan II à Casablanca est à 23 km de Bougainvilla Guesthouse." },
-    { q: "À quelle distance du Morocco Mall ?", a: "Le Morocco Mall à Casablanca est à 32 km de la maison d'hôtes." },
-    { q: "Y a-t-il un golf à proximité ?", a: "Oui. Le Mohammedia Royal Golf Club se trouve à environ 16 km de Bougainvilla Guesthouse." },
-    { q: "À quelle distance des gares de Casablanca ?", a: "Les gares Casa-Port et Casa-Voyageurs sont chacune à environ 20 km." },
-    { q: "Un parking est-il disponible ?", a: "Oui. Un parking privé gratuit est disponible sur place." },
-    { q: "L'établissement est-il non-fumeurs ?", a: "Oui. Bougainvilla Guesthouse est un établissement entièrement non-fumeurs. Les enterrements de vie de garçon/de jeune fille et événements similaires ne sont pas autorisés." },
-    { q: "Les chambres ont-elles un balcon et la climatisation ?", a: "Oui. Les chambres sont climatisées et disposent d'un balcon (souvent avec vue piscine), d'un bureau, d'une armoire et d'une salle de bains privative avec douche, articles de toilette gratuits et sèche-cheveux." },
-    { q: "Y a-t-il des lits bébé et des lits supplémentaires ?", a: "Les lits bébé sont gratuits sur demande pour les enfants de moins de 3 ans. Les lits supplémentaires sont à 17 € par personne et par nuit à partir de 3 ans, sous réserve de disponibilité." },
-    { q: "Où réserver Bougainvilla Guesthouse ?", a: "Vous pouvez réserver directement sur Booking.com (noté 9,4/10 « Fabuleux ») ou sur Agoda. Utilisez les boutons Réserver sur le site pour accéder à chaque annonce." },
-    { q: "Est-ce adapté aux familles ?", a: "Oui. Chambres familiales, lits bébé gratuits, parking gratuit, jardin sécurisé et piscine en font une base confortable pour les familles visitant Mohammedia et Casablanca." },
+    {
+      q: "Où se trouve Bougainvilla Guesthouse ?",
+      a: "Bougainvilla Guesthouse est à Sidi Moussa Ben Ali (code postal 20000), dans la région de Mohammedia (Casablanca-Settat), au Maroc.",
+    },
+    {
+      q: "À quelle distance de l'aéroport de Casablanca ?",
+      a: "La maison d'hôtes est à 43 km de l'aéroport international Mohammed V (CMN) de Casablanca — environ 40–50 minutes de route selon le trafic.",
+    },
+    {
+      q: "Y a-t-il une piscine ?",
+      a: "Oui. Une piscine extérieure au cœur d'un jardin paysager de bougainvilliers et de palmiers, avec une terrasse ensoleillée et des transats.",
+    },
+    {
+      q: "Le petit-déjeuner est-il halal ?",
+      a: "Oui. Le petit-déjeuner est halal et servi à la carte.",
+    },
+    {
+      q: "Les animaux sont-ils acceptés ?",
+      a: "Oui. Les animaux sont acceptés gratuitement sur demande — merci de prévenir la maison d'hôtes à l'avance.",
+    },
+    {
+      q: "Quels sont les horaires d'arrivée et de départ ?",
+      a: "L'arrivée se fait de 14h00 à 22h00 et le départ de 08h00 à 11h00.",
+    },
+    {
+      q: "À quelle distance de la mosquée Hassan II ?",
+      a: "La mosquée Hassan II à Casablanca est à 23 km de Bougainvilla Guesthouse.",
+    },
+    {
+      q: "À quelle distance du Morocco Mall ?",
+      a: "Le Morocco Mall à Casablanca est à 32 km de la maison d'hôtes.",
+    },
+    {
+      q: "Y a-t-il un golf à proximité ?",
+      a: "Oui. Le Mohammedia Royal Golf Club se trouve à environ 16 km de Bougainvilla Guesthouse.",
+    },
+    {
+      q: "À quelle distance des gares de Casablanca ?",
+      a: "Les gares Casa-Port et Casa-Voyageurs sont chacune à environ 20 km.",
+    },
+    {
+      q: "Un parking est-il disponible ?",
+      a: "Oui. Un parking privé gratuit est disponible sur place.",
+    },
+    {
+      q: "L'établissement est-il non-fumeurs ?",
+      a: "Oui. Bougainvilla Guesthouse est un établissement entièrement non-fumeurs. Les enterrements de vie de garçon/de jeune fille et événements similaires ne sont pas autorisés.",
+    },
+    {
+      q: "Les chambres ont-elles un balcon et la climatisation ?",
+      a: "Oui. Les chambres sont climatisées et disposent d'un balcon (souvent avec vue piscine), d'un bureau, d'une armoire et d'une salle de bains privative avec douche, articles de toilette gratuits et sèche-cheveux.",
+    },
+    {
+      q: "Y a-t-il des lits bébé et des lits supplémentaires ?",
+      a: "Les lits bébé sont gratuits sur demande pour les enfants de moins de 3 ans. Les lits supplémentaires sont à 17 € par personne et par nuit à partir de 3 ans, sous réserve de disponibilité.",
+    },
+    {
+      q: "Où réserver Bougainvilla Guesthouse ?",
+      a: "Vous pouvez réserver directement sur Booking.com (noté 9,4/10 « Fabuleux ») ou sur Agoda. Utilisez les boutons Réserver sur le site pour accéder à chaque annonce.",
+    },
+    {
+      q: "Est-ce adapté aux familles ?",
+      a: "Oui. Chambres familiales, lits bébé gratuits, parking gratuit, jardin sécurisé et piscine en font une base confortable pour les familles visitant Mohammedia et Casablanca.",
+    },
   ],
 
   testimonials: [
-    { quote: "Nous avons passé un excellent séjour. L'endroit est unique, plein de charme et dans un environnement calme et agréable. La piscine est un vrai atout, tout comme le jardin superbement entretenu.", name: "Errahali", source: "Booking.com — France" },
-    { quote: "Séjour exceptionnel, une hôte adorable qui prend soin du moindre détail.", name: "Mouna", source: "Booking.com — France" },
-    { quote: "Ce petit coin de paradis à la campagne tient toutes ses promesses. Le calme, la tranquillité et l'impression que le temps s'arrête offrent un dépaysement complet.", name: "Adam", source: "Booking.com — France" },
-    { quote: "Le personnel, les espaces verts, la nourriture, l'ambiance familiale, la piscine.", name: "Sophie", source: "Booking.com — France" },
-    { quote: "Une chambre superbement tenue. Dans le jardin, au bord de la piscine, on peut vraiment se détendre. Le propriétaire est très gentil et cuisine merveilleusement.", name: "Angela", source: "Booking.com — Pays-Bas (traduit)" },
+    {
+      quote:
+        "Nous avons passé un excellent séjour. L'endroit est unique, plein de charme et dans un environnement calme et agréable. La piscine est un vrai atout, tout comme le jardin superbement entretenu.",
+      name: "Errahali",
+      source: "Booking.com — France",
+    },
+    {
+      quote: "Séjour exceptionnel, une hôte adorable qui prend soin du moindre détail.",
+      name: "Mouna",
+      source: "Booking.com — France",
+    },
+    {
+      quote:
+        "Ce petit coin de paradis à la campagne tient toutes ses promesses. Le calme, la tranquillité et l'impression que le temps s'arrête offrent un dépaysement complet.",
+      name: "Adam",
+      source: "Booking.com — France",
+    },
+    {
+      quote: "Le personnel, les espaces verts, la nourriture, l'ambiance familiale, la piscine.",
+      name: "Sophie",
+      source: "Booking.com — France",
+    },
+    {
+      quote:
+        "Une chambre superbement tenue. Dans le jardin, au bord de la piscine, on peut vraiment se détendre. Le propriétaire est très gentil et cuisine merveilleusement.",
+      name: "Angela",
+      source: "Booking.com — Pays-Bas (traduit)",
+    },
   ],
 
   distances: [
@@ -517,9 +620,18 @@ const en: Dict = {
   location_distances_title: "Distances",
   location_getting_title: "Getting here",
   location_getting_items: [
-    { label: "From Mohammed V Airport (CMN):", text: "~40–50 min by taxi or private transfer via the A3/A5 motorway." },
-    { label: "From Casablanca city center:", text: "~30–40 min by car via the coastal road or motorway." },
-    { label: "By train:", text: "ONCF trains run frequently to Mohammedia station; take a short taxi to Sidi Moussa Ben Ali." },
+    {
+      label: "From Mohammed V Airport (CMN):",
+      text: "~40–50 min by taxi or private transfer via the A3/A5 motorway.",
+    },
+    {
+      label: "From Casablanca city center:",
+      text: "~30–40 min by car via the coastal road or motorway.",
+    },
+    {
+      label: "By train:",
+      text: "ONCF trains run frequently to Mohammedia station; take a short taxi to Sidi Moussa Ben Ali.",
+    },
     { label: "Parking:", text: "free private parking on site." },
   ],
   location_eat_title: "Eat nearby",
@@ -535,9 +647,18 @@ const en: Dict = {
   about_p3:
     "We keep things small on purpose. If you need groceries delivered, a pet welcomed, or a walking tour arranged, just ask.",
   about_pillars: [
-    { h: "Warm hospitality", p: "Small enough to remember your name, big enough to have a proper pool." },
-    { h: "Halal breakfast", p: "À la carte breakfast with local specialties, pancakes, cheese, and mint tea." },
-    { h: "Garden-first design", p: "Every room looks onto the pool or the bougainvillea. The garden is the point." },
+    {
+      h: "Warm hospitality",
+      p: "Small enough to remember your name, big enough to have a proper pool.",
+    },
+    {
+      h: "Halal breakfast",
+      p: "À la carte breakfast with local specialties, pancakes, cheese, and mint tea.",
+    },
+    {
+      h: "Garden-first design",
+      p: "Every room looks onto the pool or the bougainvillea. The garden is the point.",
+    },
   ],
   content_last_updated: "Content last updated:",
 
@@ -609,11 +730,17 @@ const en: Dict = {
     { title: "Sun terrace", desc: "Loungers under a pergola for slow mornings and long reads." },
     { title: "Free private parking", desc: "Secure on-site parking at no extra cost." },
     { title: "Halal breakfast", desc: "Halal à la carte breakfast with local specialties." },
-    { title: "Air-conditioned rooms", desc: "Every room comes with air conditioning and a wardrobe." },
+    {
+      title: "Air-conditioned rooms",
+      desc: "Every room comes with air conditioning and a wardrobe.",
+    },
     { title: "Balcony with pool view", desc: "Rooms with a private balcony overlooking the pool." },
     { title: "Private bathroom", desc: "Shower, free toiletries, and hair dryer in every room." },
     { title: "Family rooms", desc: "Family-friendly rooms; cots free, extra beds €17/night." },
-    { title: "Pets welcome (free)", desc: "Pets stay free on request — just let us know in advance." },
+    {
+      title: "Pets welcome (free)",
+      desc: "Pets stay free on request — just let us know in advance.",
+    },
     { title: "Non-smoking property", desc: "Peaceful, fully non-smoking guesthouse." },
     { title: "Fresh linen & towels", desc: "Bed linen, towels, and toiletries provided." },
   ],
@@ -666,30 +793,98 @@ const en: Dict = {
   ],
 
   faqs: [
-    { q: "Where is Bougainvilla Guesthouse located?", a: "Bougainvilla Guesthouse is in Sidi Moussa Ben Ali (postal code 20000), in the Mohammedia area of the Casablanca-Settat region, Morocco." },
-    { q: "How far is Bougainvilla Guesthouse from Casablanca airport?", a: "The guesthouse is 43 km from Mohammed V International Airport (CMN) in Casablanca — roughly a 40–50 minute drive depending on traffic." },
-    { q: "Does Bougainvilla Guesthouse have a pool?", a: "Yes. There is an outdoor pool set within a landscaped garden of bougainvillea and palms, with a sun terrace and loungers." },
-    { q: "Is breakfast halal at Bougainvilla Guesthouse?", a: "Yes. Breakfast is halal and served à la carte." },
-    { q: "Are pets allowed at Bougainvilla Guesthouse?", a: "Yes. Pets are welcome free of charge on request — please let the guesthouse know in advance." },
-    { q: "What are the check-in and check-out times?", a: "Check-in is from 14:00 to 22:00 and check-out is from 08:00 to 11:00." },
-    { q: "How far is Bougainvilla Guesthouse from Hassan II Mosque?", a: "Hassan II Mosque in Casablanca is 23 km from Bougainvilla Guesthouse." },
-    { q: "How far is Bougainvilla Guesthouse from Morocco Mall?", a: "Morocco Mall in Casablanca is 32 km from the guesthouse." },
-    { q: "Is there a golf course nearby?", a: "Yes. Mohammedia Royal Golf Club is about 16 km from Bougainvilla Guesthouse." },
-    { q: "How far are the Casablanca train stations?", a: "Casa-Port and Casa-Voyageurs train stations are each about 20 km away." },
+    {
+      q: "Where is Bougainvilla Guesthouse located?",
+      a: "Bougainvilla Guesthouse is in Sidi Moussa Ben Ali (postal code 20000), in the Mohammedia area of the Casablanca-Settat region, Morocco.",
+    },
+    {
+      q: "How far is Bougainvilla Guesthouse from Casablanca airport?",
+      a: "The guesthouse is 43 km from Mohammed V International Airport (CMN) in Casablanca — roughly a 40–50 minute drive depending on traffic.",
+    },
+    {
+      q: "Does Bougainvilla Guesthouse have a pool?",
+      a: "Yes. There is an outdoor pool set within a landscaped garden of bougainvillea and palms, with a sun terrace and loungers.",
+    },
+    {
+      q: "Is breakfast halal at Bougainvilla Guesthouse?",
+      a: "Yes. Breakfast is halal and served à la carte.",
+    },
+    {
+      q: "Are pets allowed at Bougainvilla Guesthouse?",
+      a: "Yes. Pets are welcome free of charge on request — please let the guesthouse know in advance.",
+    },
+    {
+      q: "What are the check-in and check-out times?",
+      a: "Check-in is from 14:00 to 22:00 and check-out is from 08:00 to 11:00.",
+    },
+    {
+      q: "How far is Bougainvilla Guesthouse from Hassan II Mosque?",
+      a: "Hassan II Mosque in Casablanca is 23 km from Bougainvilla Guesthouse.",
+    },
+    {
+      q: "How far is Bougainvilla Guesthouse from Morocco Mall?",
+      a: "Morocco Mall in Casablanca is 32 km from the guesthouse.",
+    },
+    {
+      q: "Is there a golf course nearby?",
+      a: "Yes. Mohammedia Royal Golf Club is about 16 km from Bougainvilla Guesthouse.",
+    },
+    {
+      q: "How far are the Casablanca train stations?",
+      a: "Casa-Port and Casa-Voyageurs train stations are each about 20 km away.",
+    },
     { q: "Is parking available?", a: "Yes. Free private parking is available on site." },
-    { q: "Is the property non-smoking?", a: "Yes. Bougainvilla Guesthouse is a fully non-smoking property. Bachelor/hen parties and similar events are not allowed." },
-    { q: "Do the rooms have balconies and air conditioning?", a: "Yes. Rooms are air-conditioned and come with a balcony (many with a pool view), a desk, wardrobe, and a private bathroom with shower, free toiletries and a hair dryer." },
-    { q: "Are cots and extra beds available?", a: "Cots are free on request for children under 3. Extra beds are €17 per person per night for guests aged 3 and up, subject to availability." },
-    { q: "Where can I book Bougainvilla Guesthouse?", a: "You can book directly on Booking.com (rated 9.4/10 “Fabulous”) or on Agoda. Use the Book Now buttons across this site to go straight to each listing." },
-    { q: "Is Bougainvilla Guesthouse good for families?", a: "Yes. Family rooms, free cots, free parking, a safe garden setting, and the pool make it a comfortable base for families visiting Mohammedia and Casablanca." },
+    {
+      q: "Is the property non-smoking?",
+      a: "Yes. Bougainvilla Guesthouse is a fully non-smoking property. Bachelor/hen parties and similar events are not allowed.",
+    },
+    {
+      q: "Do the rooms have balconies and air conditioning?",
+      a: "Yes. Rooms are air-conditioned and come with a balcony (many with a pool view), a desk, wardrobe, and a private bathroom with shower, free toiletries and a hair dryer.",
+    },
+    {
+      q: "Are cots and extra beds available?",
+      a: "Cots are free on request for children under 3. Extra beds are €17 per person per night for guests aged 3 and up, subject to availability.",
+    },
+    {
+      q: "Where can I book Bougainvilla Guesthouse?",
+      a: "You can book directly on Booking.com (rated 9.4/10 “Fabulous”) or on Agoda. Use the Book Now buttons across this site to go straight to each listing.",
+    },
+    {
+      q: "Is Bougainvilla Guesthouse good for families?",
+      a: "Yes. Family rooms, free cots, free parking, a safe garden setting, and the pool make it a comfortable base for families visiting Mohammedia and Casablanca.",
+    },
   ],
 
   testimonials: [
-    { quote: "We had an excellent stay. The place is unique, full of charm, and set in a calm and pleasant environment. The pool is a real asset, as is the beautifully kept garden.", name: "Errahali", source: "Booking.com — France" },
-    { quote: "Exceptional stay, an adorable host who takes care of every detail.", name: "Mouna", source: "Booking.com — France" },
-    { quote: "This little corner of paradise in the countryside keeps all its promises. The calm, the tranquillity, and the feeling that time stands still give you a complete change of scenery.", name: "Adam", source: "Booking.com — France" },
-    { quote: "The staff, the green spaces, the food, the family atmosphere, the pool.", name: "Sophie", source: "Booking.com — France" },
-    { quote: "A beautifully kept room. In the garden with the pool you can truly unwind. The owner is very kind and cooked wonderfully for us.", name: "Angela", source: "Booking.com — Netherlands (translated)" },
+    {
+      quote:
+        "We had an excellent stay. The place is unique, full of charm, and set in a calm and pleasant environment. The pool is a real asset, as is the beautifully kept garden.",
+      name: "Errahali",
+      source: "Booking.com — France",
+    },
+    {
+      quote: "Exceptional stay, an adorable host who takes care of every detail.",
+      name: "Mouna",
+      source: "Booking.com — France",
+    },
+    {
+      quote:
+        "This little corner of paradise in the countryside keeps all its promises. The calm, the tranquillity, and the feeling that time stands still give you a complete change of scenery.",
+      name: "Adam",
+      source: "Booking.com — France",
+    },
+    {
+      quote: "The staff, the green spaces, the food, the family atmosphere, the pool.",
+      name: "Sophie",
+      source: "Booking.com — France",
+    },
+    {
+      quote:
+        "A beautifully kept room. In the garden with the pool you can truly unwind. The owner is very kind and cooked wonderfully for us.",
+      name: "Angela",
+      source: "Booking.com — Netherlands (translated)",
+    },
   ],
 
   distances: [

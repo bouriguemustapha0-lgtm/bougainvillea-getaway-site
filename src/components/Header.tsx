@@ -20,12 +20,7 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between gap-4">
         <Link to="/" className="flex min-w-0 items-center gap-2" aria-label={`${SITE.name} home`}>
-          <img
-            src="/logo.png"
-            alt=""
-            aria-hidden
-            className="h-9 w-auto shrink-0 object-contain"
-          />
+          <img src="/logo.png" alt="" aria-hidden className="h-9 w-auto shrink-0 object-contain" />
           <span className="truncate font-display text-xl leading-none">{SITE.name}</span>
         </Link>
 

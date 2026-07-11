@@ -15,7 +15,10 @@ export const Route = createFileRoute("/amenities")({
           "Services à Bougainvilla Retreat, Mohammedia : piscine extérieure, jardin paysager, terrasse ensoleillée, petit-déjeuner halal, parking gratuit et animaux acceptés.",
       },
       { property: "og:title", content: `Services | ${SITE.name}` },
-      { property: "og:description", content: "Piscine, jardin, petit-déjeuner halal, parking gratuit et plus encore." },
+      {
+        property: "og:description",
+        content: "Piscine, jardin, petit-déjeuner halal, parking gratuit et plus encore.",
+      },
       { property: "og:url", content: "/amenities" },
     ],
     links: [{ rel: "canonical", href: "/amenities" }],
@@ -38,12 +41,20 @@ function AmenitiesPage() {
     <Layout>
       <section className="relative isolate overflow-hidden border-b border-border">
         <div className="absolute inset-0 -z-10">
-          <img src={heroImg} alt="" width={1920} height={1200} className="h-full w-full object-cover" />
+          <img
+            src={heroImg}
+            alt=""
+            width={1920}
+            height={1200}
+            className="h-full w-full object-cover"
+          />
           <div className="absolute inset-0 bg-black/45" />
         </div>
         <div className="container-page py-24 text-white">
           <span className="eyebrow text-white/90">{t("nav_amenities")}</span>
-          <h1 className="mt-3 max-w-3xl font-display text-5xl md:text-6xl text-white">{t("amenities_h1")}</h1>
+          <h1 className="mt-3 max-w-3xl font-display text-5xl md:text-6xl text-white">
+            {t("amenities_h1")}
+          </h1>
           <p className="mt-5 max-w-2xl text-lg text-white/90">{t("amenities_lead")}</p>
         </div>
       </section>

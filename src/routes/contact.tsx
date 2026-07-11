@@ -55,15 +55,26 @@ function ContactPage() {
           <dl className="mt-6 space-y-4">
             <div>
               <dt className="text-sm text-muted-foreground">{t("contact_address")}</dt>
-              <dd>{SITE.streetAddress}, {SITE.neighborhood}, {SITE.city}, {SITE.region}, {SITE.country}</dd>
+              <dd>
+                {SITE.streetAddress}, {SITE.neighborhood}, {SITE.city}, {SITE.region},{" "}
+                {SITE.country}
+              </dd>
             </div>
             <div>
               <dt className="text-sm text-muted-foreground">{t("contact_phone")}</dt>
-              <dd><a href={SITE.phoneHref} className="text-primary hover:underline">{SITE.phone}</a></dd>
+              <dd>
+                <a href={SITE.phoneHref} className="text-primary hover:underline">
+                  {SITE.phone}
+                </a>
+              </dd>
             </div>
             <div>
               <dt className="text-sm text-muted-foreground">{t("contact_email")}</dt>
-              <dd><a href={`mailto:${SITE.email}`} className="text-primary hover:underline">{SITE.email}</a></dd>
+              <dd>
+                <a href={`mailto:${SITE.email}`} className="text-primary hover:underline">
+                  {SITE.email}
+                </a>
+              </dd>
             </div>
             <div>
               <dt className="text-sm text-muted-foreground">{t("contact_whatsapp")}</dt>
@@ -84,8 +95,13 @@ function ContactPage() {
           <h2 className="mt-12 font-display text-3xl">{t("contact_book_otas")}</h2>
           <div className="mt-4 flex flex-wrap gap-3">
             {bookingLinks.map((b) => (
-              <a key={b.key} href={b.href} target="_blank" rel="noopener noreferrer"
-                 className={b.key === "booking" ? "btn-primary text-sm" : "btn-outline text-sm"}>
+              <a
+                key={b.key}
+                href={b.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={b.key === "booking" ? "btn-primary text-sm" : "btn-outline text-sm"}
+              >
                 {b.label}
               </a>
             ))}
