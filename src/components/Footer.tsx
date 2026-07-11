@@ -12,11 +12,7 @@ export function Footer() {
     <footer className="mt-24 border-t border-border bg-secondary/40">
       <div className="container-page grid gap-10 py-14 md:grid-cols-4">
         <div>
-          <img
-            src="/logo.png"
-            alt={SITE.name}
-            className="h-10 w-auto object-contain"
-          />
+          <img src="/logo.png" alt={SITE.name} className="h-10 w-auto object-contain" />
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">{t("footer_intro")}</p>
         </div>
 
@@ -29,22 +25,54 @@ export function Footer() {
             <br />
             {SITE.region}, {SITE.country}
             <br />
-            <a href={SITE.phoneHref} className="hover:text-primary">{SITE.phone}</a>
+            <a href={SITE.phoneHref} className="hover:text-primary">
+              {SITE.phone}
+            </a>
             <br />
-            <a href={`mailto:${SITE.email}`} className="hover:text-primary">{SITE.email}</a>
+            <a href={`mailto:${SITE.email}`} className="hover:text-primary">
+              {SITE.email}
+            </a>
           </address>
         </div>
 
         <div>
           <h3 className="text-sm font-semibold text-ink">{t("footer_explore")}</h3>
           <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-            <li><Link to="/rooms" className="hover:text-primary">{t("nav_rooms")}</Link></li>
-            <li><Link to="/amenities" className="hover:text-primary">{t("nav_amenities")}</Link></li>
-            <li><Link to="/location" className="hover:text-primary">{t("nav_location")}</Link></li>
-            <li><Link to="/gallery" className="hover:text-primary">{t("nav_gallery")}</Link></li>
-            <li><Link to="/about" className="hover:text-primary">{t("nav_about")}</Link></li>
-            <li><Link to="/faq" className="hover:text-primary">{t("nav_faq")}</Link></li>
-            <li><Link to="/contact" className="hover:text-primary">{t("nav_contact")}</Link></li>
+            <li>
+              <Link to="/rooms" className="hover:text-primary">
+                {t("nav_rooms")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/amenities" className="hover:text-primary">
+                {t("nav_amenities")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/location" className="hover:text-primary">
+                {t("nav_location")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/gallery" className="hover:text-primary">
+                {t("nav_gallery")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="hover:text-primary">
+                {t("nav_about")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/faq" className="hover:text-primary">
+                {t("nav_faq")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="hover:text-primary">
+                {t("nav_contact")}
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -68,8 +96,12 @@ export function Footer() {
       </div>
       <div className="border-t border-border/70">
         <div className="container-page flex flex-col items-start justify-between gap-2 py-6 text-xs text-muted-foreground sm:flex-row sm:items-center">
-          <p>© {new Date().getFullYear()} {SITE.name}. {t("footer_rights")}</p>
-          <p>{t("last_updated")} {SITE.lastUpdated}</p>
+          <p>
+            © {new Date().getFullYear()} {SITE.name}. {t("footer_rights")}
+          </p>
+          <p>
+            {t("last_updated")} {SITE.lastUpdated}
+          </p>
         </div>
       </div>
     </footer>

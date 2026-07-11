@@ -28,9 +28,16 @@ export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
       { title: `Galerie | ${SITE.name}, Mohammedia Maroc` },
-      { name: "description", content: "Photos de Bougainvilla Retreat à Mohammedia — piscine, jardin, chambres et petit-déjeuner." },
+      {
+        name: "description",
+        content:
+          "Photos de Bougainvilla Retreat à Mohammedia — piscine, jardin, chambres et petit-déjeuner.",
+      },
       { property: "og:title", content: `Galerie | ${SITE.name}` },
-      { property: "og:description", content: "Photos de la piscine, du jardin, des chambres et du petit-déjeuner." },
+      {
+        property: "og:description",
+        content: "Photos de la piscine, du jardin, des chambres et du petit-déjeuner.",
+      },
       { property: "og:url", content: "/gallery" },
     ],
     links: [{ rel: "canonical", href: "/gallery" }],

@@ -8,6 +8,7 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
@@ -24,7 +25,9 @@ function NotFoundComponent() {
           The page you're looking for doesn't exist or has been moved.
         </p>
         <div className="mt-6">
-          <Link to="/" className="btn-primary text-sm">Go home</Link>
+          <Link to="/" className="btn-primary text-sm">
+            Go home
+          </Link>
         </div>
       </div>
     </div>
@@ -46,12 +49,17 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-2">
           <button
-            onClick={() => { router.invalidate(); reset(); }}
+            onClick={() => {
+              router.invalidate();
+              reset();
+            }}
             className="btn-primary text-sm"
           >
             Try again
           </button>
-          <a href="/" className="btn-outline text-sm">Go home</a>
+          <a href="/" className="btn-outline text-sm">
+            Go home
+          </a>
         </div>
       </div>
     </div>
@@ -79,19 +87,38 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Bougainvilla" },
       { property: "og:title", content: "Bougainvilla" },
       { name: "twitter:title", content: "Bougainvilla" },
-      { name: "description", content: "Bougainvilla Retreat is a boutique guesthouse in Mohammedia, Morocco, about 43 km from Casablanca's Mohammed V Airport, featuring an infinity pool and garden." },
-      { property: "og:description", content: "Bougainvilla Retreat is a boutique guesthouse in Mohammedia, Morocco, about 43 km from Casablanca's Mohammed V Airport, featuring an infinity pool and garden." },
-      { name: "twitter:description", content: "Bougainvilla Retreat is a boutique guesthouse in Mohammedia, Morocco, about 43 km from Casablanca's Mohammed V Airport, featuring an infinity pool and garden." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/07ce3b5f-1cf5-4cd4-b6d0-3e8800bb486c/id-preview-7b3aa8f6--c0ee130d-b288-4aa8-9ed7-a0154438e51f.lovable.app-1783600317794.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/07ce3b5f-1cf5-4cd4-b6d0-3e8800bb486c/id-preview-7b3aa8f6--c0ee130d-b288-4aa8-9ed7-a0154438e51f.lovable.app-1783600317794.png" },
+      {
+        name: "description",
+        content:
+          "Bougainvilla Retreat is a boutique guesthouse in Mohammedia, Morocco, about 43 km from Casablanca's Mohammed V Airport, featuring an infinity pool and garden.",
+      },
+      {
+        property: "og:description",
+        content:
+          "Bougainvilla Retreat is a boutique guesthouse in Mohammedia, Morocco, about 43 km from Casablanca's Mohammed V Airport, featuring an infinity pool and garden.",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Bougainvilla Retreat is a boutique guesthouse in Mohammedia, Morocco, about 43 km from Casablanca's Mohammed V Airport, featuring an infinity pool and garden.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/07ce3b5f-1cf5-4cd4-b6d0-3e8800bb486c/id-preview-7b3aa8f6--c0ee130d-b288-4aa8-9ed7-a0154438e51f.lovable.app-1783600317794.png",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/07ce3b5f-1cf5-4cd4-b6d0-3e8800bb486c/id-preview-7b3aa8f6--c0ee130d-b288-4aa8-9ed7-a0154438e51f.lovable.app-1783600317794.png",
+      },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "icon", type: "image/png", href: "/favicon.png" },
       {
         rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap",
       },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
@@ -123,6 +150,7 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <LanguageProvider>
         <Outlet />
+        <Analytics />
       </LanguageProvider>
     </QueryClientProvider>
   );

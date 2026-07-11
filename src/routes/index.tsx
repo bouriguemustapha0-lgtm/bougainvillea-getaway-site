@@ -95,10 +95,20 @@ function Home() {
           </h1>
           <p className="mt-6 max-w-xl text-lg text-white/90">{t("home_hero_lead")}</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href={SITE.ota.booking} target="_blank" rel="noopener noreferrer" className="btn-primary">
+            <a
+              href={SITE.ota.booking}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
               {t("book_on_booking")}
             </a>
-            <a href={SITE.ota.agoda} target="_blank" rel="noopener noreferrer" className="btn-terracotta">
+            <a
+              href={SITE.ota.agoda}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-terracotta"
+            >
               {t("book_on_agoda")}
             </a>
             <Link to="/rooms" className="btn-outline border-white/60 text-white hover:bg-white/10">
@@ -118,16 +128,40 @@ function Home() {
             <ul className="mt-6 grid gap-2 text-[15px]">
               {t("home_why_bullets").map((f) => (
                 <li key={f} className="flex items-start gap-3">
-                  <span aria-hidden className="mt-1 inline-block h-2 w-2 shrink-0 rounded-full bg-primary" />
+                  <span
+                    aria-hidden
+                    className="mt-1 inline-block h-2 w-2 shrink-0 rounded-full bg-primary"
+                  />
                   <span>{f}</span>
                 </li>
               ))}
             </ul>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <img src={gardenImg} alt="" loading="lazy" width={1600} height={1100} className="col-span-2 aspect-[16/10] w-full rounded-2xl object-cover shadow-[var(--shadow-elegant)]" />
-            <img src={terraceImg} alt="" loading="lazy" width={1600} height={1100} className="aspect-[4/5] w-full rounded-2xl object-cover" />
-            <img src={breakfastImg} alt="" loading="lazy" width={1600} height={1100} className="aspect-[4/5] w-full rounded-2xl object-cover" />
+            <img
+              src={gardenImg}
+              alt=""
+              loading="lazy"
+              width={1600}
+              height={1100}
+              className="col-span-2 aspect-[16/10] w-full rounded-2xl object-cover shadow-[var(--shadow-elegant)]"
+            />
+            <img
+              src={terraceImg}
+              alt=""
+              loading="lazy"
+              width={1600}
+              height={1100}
+              className="aspect-[4/5] w-full rounded-2xl object-cover"
+            />
+            <img
+              src={breakfastImg}
+              alt=""
+              loading="lazy"
+              width={1600}
+              height={1100}
+              className="aspect-[4/5] w-full rounded-2xl object-cover"
+            />
           </div>
         </div>
       </section>
@@ -140,7 +174,9 @@ function Home() {
               <span className="eyebrow">{t("home_amenities_eyebrow")}</span>
               <h2 className="mt-2 font-display text-4xl">{t("home_amenities_title")}</h2>
             </div>
-            <Link to="/amenities" className="btn-outline">{t("see_all_amenities")}</Link>
+            <Link to="/amenities" className="btn-outline">
+              {t("see_all_amenities")}
+            </Link>
           </div>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {amenities.slice(0, 8).map((a) => (
@@ -161,16 +197,30 @@ function Home() {
               <span className="eyebrow">{t("home_rooms_eyebrow")}</span>
               <h2 className="mt-2 font-display text-4xl">{t("home_rooms_title")}</h2>
             </div>
-            <Link to="/rooms" className="btn-outline">{t("all_rooms")}</Link>
+            <Link to="/rooms" className="btn-outline">
+              {t("all_rooms")}
+            </Link>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {rooms.map((r) => (
               <article key={r.slug} className="card-soft flex flex-col">
-                <img src={roomImg} alt={`${r.name} — ${SITE.name}, ${SITE.city}`} loading="lazy" width={1600} height={1100} className="aspect-[4/3] w-full object-cover" />
+                <img
+                  src={roomImg}
+                  alt={`${r.name} — ${SITE.name}, ${SITE.city}`}
+                  loading="lazy"
+                  width={1600}
+                  height={1100}
+                  className="aspect-[4/3] w-full object-cover"
+                />
                 <div className="flex flex-1 flex-col p-6">
                   <h3 className="font-display text-2xl">{r.name}</h3>
                   <p className="mt-2 flex-1 text-sm text-muted-foreground">{r.blurb}</p>
-                  <a href={SITE.ota.booking} target="_blank" rel="noopener noreferrer" className="btn-primary mt-5 self-start text-sm">
+                  <a
+                    href={SITE.ota.booking}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary mt-5 self-start text-sm"
+                  >
                     {t("check_availability")}
                   </a>
                 </div>
@@ -189,13 +239,18 @@ function Home() {
             <p className="mt-4 text-muted-foreground">{t("home_location_lead")}</p>
             <dl className="mt-6 grid gap-3 text-sm">
               {distances.map((d) => (
-                <div key={d.label} className="flex items-baseline justify-between border-b border-border/60 pb-2">
+                <div
+                  key={d.label}
+                  className="flex items-baseline justify-between border-b border-border/60 pb-2"
+                >
                   <dt className="text-foreground">{d.label}</dt>
                   <dd className="font-medium text-primary">{d.value}</dd>
                 </div>
               ))}
             </dl>
-            <Link to="/location" className="btn-outline mt-6">{t("getting_here")}</Link>
+            <Link to="/location" className="btn-outline mt-6">
+              {t("getting_here")}
+            </Link>
           </div>
           <div className="overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-elegant)]">
             <iframe
@@ -236,7 +291,9 @@ function Home() {
             <span className="eyebrow">{t("home_faq_eyebrow")}</span>
             <h2 className="mt-2 font-display text-4xl">{t("home_faq_title")}</h2>
             <p className="mt-4 text-muted-foreground">{t("home_faq_lead")}</p>
-            <Link to="/faq" className="btn-outline mt-6">{t("all_questions")}</Link>
+            <Link to="/faq" className="btn-outline mt-6">
+              {t("all_questions")}
+            </Link>
           </div>
           <dl className="space-y-6">
             {faqs.slice(0, 5).map((f) => (

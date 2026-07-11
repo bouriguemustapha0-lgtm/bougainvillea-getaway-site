@@ -68,7 +68,7 @@
   /* Bougainvillea magenta */
   --primary: oklch(0.58 0.22 350);
   --primary-foreground: oklch(0.99 0.005 80);
-  --primary-glow: oklch(0.72 0.20 355);
+  --primary-glow: oklch(0.72 0.2 355);
 
   /* Terracotta secondary */
   --secondary: oklch(0.94 0.03 55);
@@ -108,13 +108,21 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
-  h1, h2, h3, h4, h5 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     font-family: var(--font-display);
     letter-spacing: -0.01em;
     color: var(--color-ink);
   }
-  h1 { font-weight: 500; }
-  h2 { font-weight: 500; }
+  h1 {
+    font-weight: 500;
+  }
+  h2 {
+    font-weight: 500;
+  }
   ::selection {
     background: color-mix(in oklab, var(--primary) 30%, transparent);
   }
@@ -139,8 +147,14 @@
   font-weight: 500;
   font-size: 0.95rem;
   box-shadow: var(--shadow-soft);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
-  &:hover { transform: translateY(-1px); filter: brightness(1.05); }
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+  &:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+  }
 }
 
 @utility btn-outline {
@@ -155,8 +169,13 @@
   background: transparent;
   font-weight: 500;
   font-size: 0.95rem;
-  transition: background 0.2s, border-color 0.2s;
-  &:hover { background: var(--color-secondary); border-color: var(--color-ink); }
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+  &:hover {
+    background: var(--color-secondary);
+    border-color: var(--color-ink);
+  }
 }
 
 @utility btn-terracotta {
@@ -170,8 +189,13 @@
   color: var(--color-terracotta-foreground);
   font-weight: 500;
   font-size: 0.95rem;
-  transition: filter 0.2s, transform 0.2s;
-  &:hover { filter: brightness(1.05); transform: translateY(-1px); }
+  transition:
+    filter 0.2s,
+    transform 0.2s;
+  &:hover {
+    filter: brightness(1.05);
+    transform: translateY(-1px);
+  }
 }
 
 @utility card-soft {
@@ -179,8 +203,13 @@
   border: 1px solid var(--color-border);
   border-radius: 1.25rem;
   overflow: hidden;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  &:hover { box-shadow: var(--shadow-elegant); transform: translateY(-2px); }
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+  &:hover {
+    box-shadow: var(--shadow-elegant);
+    transform: translateY(-2px);
+  }
 }
 
 @utility section-pad {

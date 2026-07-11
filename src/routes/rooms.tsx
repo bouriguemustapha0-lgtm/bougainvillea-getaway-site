@@ -55,7 +55,10 @@ function RoomsPage() {
       <section className="section-pad">
         <div className="container-page space-y-16">
           {rooms.map((r, i) => (
-            <article key={r.slug} className={`grid gap-10 md:grid-cols-2 md:items-center ${i % 2 ? "md:[&>*:first-child]:order-2" : ""}`}>
+            <article
+              key={r.slug}
+              className={`grid gap-10 md:grid-cols-2 md:items-center ${i % 2 ? "md:[&>*:first-child]:order-2" : ""}`}
+            >
               <img
                 src={imgs[i % imgs.length]}
                 alt={`${r.name} — ${SITE.name}, ${SITE.city}`}
@@ -76,8 +79,15 @@ function RoomsPage() {
                 </ul>
                 <div className="mt-8 flex flex-wrap gap-3">
                   {bookingLinks.map((b) => (
-                    <a key={b.key} href={b.href} target="_blank" rel="noopener noreferrer"
-                       className={b.key === "booking" ? "btn-primary text-sm" : "btn-outline text-sm"}>
+                    <a
+                      key={b.key}
+                      href={b.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={
+                        b.key === "booking" ? "btn-primary text-sm" : "btn-outline text-sm"
+                      }
+                    >
                       {b.label}
                     </a>
                   ))}

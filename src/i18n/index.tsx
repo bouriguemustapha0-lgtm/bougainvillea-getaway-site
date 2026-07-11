@@ -63,13 +63,17 @@ export function useT() {
 export function LanguageSwitcher({ className = "" }: { className?: string }) {
   const { lang, setLang } = useLang();
   return (
-    <div className={`inline-flex items-center rounded-full border border-border bg-background/60 text-xs ${className}`}>
+    <div
+      className={`inline-flex items-center rounded-full border border-border bg-background/60 text-xs ${className}`}
+    >
       <button
         type="button"
         onClick={() => setLang("fr")}
         aria-pressed={lang === "fr"}
         className={`rounded-full px-3 py-1 transition-colors ${
-          lang === "fr" ? "bg-primary text-primary-foreground" : "text-foreground/70 hover:text-primary"
+          lang === "fr"
+            ? "bg-primary text-primary-foreground"
+            : "text-foreground/70 hover:text-primary"
         }`}
       >
         FR
@@ -79,7 +83,9 @@ export function LanguageSwitcher({ className = "" }: { className?: string }) {
         onClick={() => setLang("en")}
         aria-pressed={lang === "en"}
         className={`rounded-full px-3 py-1 transition-colors ${
-          lang === "en" ? "bg-primary text-primary-foreground" : "text-foreground/70 hover:text-primary"
+          lang === "en"
+            ? "bg-primary text-primary-foreground"
+            : "text-foreground/70 hover:text-primary"
         }`}
       >
         EN

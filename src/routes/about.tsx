@@ -15,7 +15,11 @@ export const Route = createFileRoute("/about")({
           "L'histoire de Bougainvilla Retreat — une maison d'hôtes de charme à Mohammedia, Maroc, autour d'un jardin de bougainvilliers, d'une piscine extérieure et d'une hospitalité marocaine chaleureuse.",
       },
       { property: "og:title", content: `À propos | ${SITE.name}` },
-      { property: "og:description", content: "Une maison d'hôtes de charme à Mohammedia, autour d'un jardin de bougainvilliers." },
+      {
+        property: "og:description",
+        content:
+          "Une maison d'hôtes de charme à Mohammedia, autour d'un jardin de bougainvilliers.",
+      },
       { property: "og:url", content: "/about" },
     ],
     links: [{ rel: "canonical", href: "/about" }],
