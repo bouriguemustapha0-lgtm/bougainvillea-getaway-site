@@ -80,7 +80,7 @@ function Home() {
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <img
-            src={heroAsset.url}
+            src={heroAsset}
             alt={heroAlt}
             width={1920}
             height={1200}
