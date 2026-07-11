@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Layout } from "@/components/Layout";
-import heroAsset from "@/assets/hero-dome.jpg.asset.json";
+import heroAsset from "@/assets/hero-dome.jpg";
 import gardenImg from "@/assets/garden.jpg";
 import breakfastImg from "@/assets/breakfast.jpg";
 import roomImg from "@/assets/room.jpg";
