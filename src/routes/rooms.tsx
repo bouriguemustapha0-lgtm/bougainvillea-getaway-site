@@ -2,12 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Layout } from "@/components/Layout";
 import { SITE } from "@/lib/site";
 import { breadcrumbSchema, jsonLdScript } from "@/lib/schema";
-import roomTwinBeds from "@/assets/room-twin-beds.jpg.asset.json";
-import roomSuite from "@/assets/room-suite.jpg.asset.json";
-import roomSuiteInterior from "@/assets/room-suite-interior.jpg.asset.json";
+import roomTwinBeds from "@/assets/room-twin-beds.jpg";
+import roomSuite from "@/assets/room-suite.jpg";
+import roomSuiteInterior from "@/assets/room-suite-interior.jpg";
 import { useT } from "@/i18n";
 
-const imgs = [roomTwinBeds.url, roomSuite.url, roomSuiteInterior.url];
+const imgs = [roomTwinBeds, roomSuite, roomSuiteInterior];
 
 export const Route = createFileRoute("/rooms")({
   head: () => ({
