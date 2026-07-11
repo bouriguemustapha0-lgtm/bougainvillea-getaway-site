@@ -4,10 +4,10 @@ import { SITE } from "@/lib/site";
 import { breadcrumbSchema, jsonLdScript } from "@/lib/schema";
 import roomTwinBeds from "@/assets/room-twin-beds.jpg.asset.json";
 import roomSuite from "@/assets/room-suite.jpg.asset.json";
-import gardenImg from "@/assets/garden.jpg";
+import roomSuiteInterior from "@/assets/room-suite-interior.jpg.asset.json";
 import { useT } from "@/i18n";
 
-const imgs = [roomTwinBeds.url, roomSuite.url, gardenImg];
+const imgs = [roomTwinBeds.url, roomSuite.url, roomSuiteInterior.url];
 
 export const Route = createFileRoute("/rooms")({
   head: () => ({
