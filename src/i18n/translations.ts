@@ -450,9 +450,9 @@ const en: Dict = {
   chat_whatsapp: "Chat on WhatsApp",
 
   home_hero_eyebrow: "Mohammedia · Casablanca-Settat · Morocco",
-  home_hero_title: "A bougainvillea-draped retreat, minutes from Casablanca.",
+  home_hero_title: "A bougainvillea retreat, minutes from Casablanca.",
   home_hero_lead:
-    "Tucked away in Sidi Moussa Ben Ali, Bougainvilla Retreat is where slow mornings begin by the pool, jasmine and bougainvillea scent the garden paths, and every breakfast is made with care. Just 43 km from Casablanca, yet a world away from the rush.",
+    "A quiet hideaway in Sidi Moussa Ben Ali. Pool, garden blooms and slow breakfasts — just 43 km from Casablanca, far from the rush.",
 
   home_why_eyebrow: "Why stay here",
   home_why_title: "A quieter side of Casablanca, wrapped in bougainvillea.",
