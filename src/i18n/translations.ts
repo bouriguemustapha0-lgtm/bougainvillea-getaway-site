@@ -149,9 +149,9 @@ const fr: Dict = {
   chat_whatsapp: "Discuter sur WhatsApp",
 
   home_hero_eyebrow: "Mohammedia · Casablanca-Settat · Maroc",
-  home_hero_title: "Une retraite tapissée de bougainvilliers, à quelques minutes de Casablanca.",
+  home_hero_title: "Une retraite de bougainvilliers, à deux pas de Casablanca.",
   home_hero_lead:
-    "Nichée à Sidi Moussa Ben Ali, Bougainvilla Retreat est l'endroit où les matinées commencent lentement au bord de la piscine, où le jasmin et les bougainvilliers parfument les allées, et où chaque petit-déjeuner est préparé avec soin. À seulement 43 km de Casablanca, à mille lieues de son agitation.",
+    "Havre paisible à Sidi Moussa Ben Ali. Piscine, jardin fleuri et petits-déjeuners soignés — à 43 km de Casablanca, loin de l'agitation.",
 
   home_why_eyebrow: "Pourquoi séjourner ici",
   home_why_title: "Le côté paisible de Casablanca, drapé de bougainvilliers.",
