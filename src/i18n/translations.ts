@@ -271,7 +271,7 @@ const fr: Dict = {
   contact_eyebrow: "Contact",
   contact_h1: "Venez séjourner chez nous.",
   contact_lead:
-    "Pour les disponibilités et les tarifs, merci de réserver directement sur Booking.com ou Agoda. Pour tout le reste — animaux, régimes alimentaires, transferts — contactez-nous sur WhatsApp ou par e-mail.",
+    "Pour toute demande — disponibilités, tarifs, animaux, régimes alimentaires ou transferts — écrivez-nous directement sur WhatsApp. Nous répondons en français, anglais ou arabe.",
   contact_direct: "Contact direct",
   contact_address: "Adresse",
   contact_phone: "Téléphone",
@@ -549,7 +549,7 @@ const en: Dict = {
   contact_eyebrow: "Contact",
   contact_h1: "Come stay with us.",
   contact_lead:
-    "For availability and rates, please book directly on Booking.com or Agoda. For anything else — pets, dietary needs, transfers — reach us on WhatsApp or by email.",
+    "For any request — availability, rates, pets, dietary needs or transfers — message us directly on WhatsApp. We reply in French, English or Arabic.",
   contact_direct: "Direct contact",
   contact_address: "Address",
   contact_phone: "Phone",
