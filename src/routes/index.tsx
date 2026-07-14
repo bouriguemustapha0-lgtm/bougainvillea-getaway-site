@@ -95,12 +95,9 @@ function Home() {
           </h1>
           <p className="mt-6 max-w-xl text-lg text-white/90">{t("home_hero_lead")}</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href={SITE.ota.booking} target="_blank" rel="noopener noreferrer" className="btn-primary">
-              {t("book_on_booking")}
-            </a>
-            <a href={SITE.ota.agoda} target="_blank" rel="noopener noreferrer" className="btn-terracotta">
-              {t("book_on_agoda")}
-            </a>
+            <Link to="/reservation" className="btn-primary">
+              {t("book_now")}
+            </Link>
             <Link to="/rooms" className="btn-outline border-white/60 text-white hover:bg-white/10">
               {t("explore_rooms")}
             </Link>

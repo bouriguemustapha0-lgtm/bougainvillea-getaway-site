@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { SITE } from "@/lib/site";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { useT } from "@/i18n";
@@ -7,22 +8,9 @@ export function MobileBookBar() {
   return (
     <div className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-background/95 p-3 shadow-lg backdrop-blur md:hidden">
       <div className="flex gap-2">
-        <a
-          href={SITE.ota.booking}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-primary flex-1 text-sm"
-        >
-          Booking.com
-        </a>
-        <a
-          href={SITE.ota.agoda}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-terracotta flex-1 text-sm"
-        >
-          Agoda
-        </a>
+        <Link to="/reservation" className="btn-primary flex-1 text-sm">
+          {t("book_now")}
+        </Link>
         <a
           href={SITE.whatsapp}
           target="_blank"

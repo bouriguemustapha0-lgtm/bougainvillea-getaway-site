@@ -4,10 +4,6 @@ import { useT } from "@/i18n";
 
 export function Footer() {
   const t = useT();
-  const bookingLinks = [
-    { label: t("book_on_booking"), href: SITE.ota.booking, key: "booking" },
-    { label: t("book_on_agoda"), href: SITE.ota.agoda, key: "agoda" },
-  ];
   return (
     <footer className="mt-24 border-t border-border bg-secondary/40">
       <div className="container-page grid gap-10 py-14 md:grid-cols-4">
@@ -51,18 +47,21 @@ export function Footer() {
         <div>
           <h3 className="text-sm font-semibold text-ink">{t("footer_book_direct")}</h3>
           <ul className="mt-3 space-y-2 text-sm">
-            {bookingLinks.map((b) => (
-              <li key={b.key}>
-                <a
-                  href={b.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary"
-                >
-                  {b.label}
-                </a>
-              </li>
-            ))}
+            <li>
+              <Link to="/reservation" className="text-muted-foreground hover:text-primary">
+                {t("book_now")}
+              </Link>
+            </li>
+            <li>
+              <a
+                href={SITE.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary"
+              >
+                {t("chat_whatsapp")}
+              </a>
+            </li>
           </ul>
         </div>
       </div>
