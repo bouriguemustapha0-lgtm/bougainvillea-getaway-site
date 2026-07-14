@@ -45,14 +45,9 @@ export function Header() {
 
         <div className="hidden items-center gap-3 md:flex">
           <LanguageSwitcher />
-          <a
-            href={SITE.ota.booking}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary text-sm"
-          >
+          <Link to="/reservation" className="btn-primary text-sm">
             {t("book_now")}
-          </a>
+          </Link>
         </div>
 
         <button
@@ -88,14 +83,9 @@ export function Header() {
             <div className="px-3 pt-2">
               <LanguageSwitcher />
             </div>
-            <a
-              href={SITE.ota.booking}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary mt-2 text-sm"
-            >
-              {t("book_on_booking")}
-            </a>
+            <Link to="/reservation" onClick={() => setOpen(false)} className="btn-primary mt-2 text-sm">
+              {t("book_now")}
+            </Link>
           </nav>
         </div>
       )}

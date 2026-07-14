@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { Layout } from "@/components/Layout";
 import { SITE } from "@/lib/site";
 import { breadcrumbSchema, jsonLdScript } from "@/lib/schema";
@@ -38,10 +38,6 @@ export const Route = createFileRoute("/rooms")({
 function RoomsPage() {
   const t = useT();
   const rooms = t("rooms");
-  const bookingLinks = [
-    { label: t("book_on_booking"), href: SITE.ota.booking, key: "booking" },
-    { label: t("book_on_agoda"), href: SITE.ota.agoda, key: "agoda" },
-  ];
   return (
     <Layout>
       <section className="border-b border-border bg-secondary/40 py-20">
@@ -75,12 +71,17 @@ function RoomsPage() {
                   ))}
                 </ul>
                 <div className="mt-8 flex flex-wrap gap-3">
-                  {bookingLinks.map((b) => (
-                    <a key={b.key} href={b.href} target="_blank" rel="noopener noreferrer"
-                       className={b.key === "booking" ? "btn-primary text-sm" : "btn-outline text-sm"}>
-                      {b.label}
-                    </a>
-                  ))}
+                  <Link to="/reservation" className="btn-primary text-sm">
+                    {t("book_now")}
+                  </Link>
+                  <a
+                    href={SITE.whatsapp}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-outline text-sm"
+                  >
+                    {t("chat_whatsapp")}
+                  </a>
                 </div>
                 <p className="mt-4 text-xs text-muted-foreground">{t("rooms_pricing_note")}</p>
               </div>
