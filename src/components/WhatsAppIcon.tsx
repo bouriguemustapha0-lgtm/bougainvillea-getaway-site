@@ -1,9 +1,9 @@
-import whatsappIcon from "@/assets/whatsapp-icon.png";
+import whatsappIcon from "@/assets/whatsapp-icon.jpg.asset.json";
 
 export function WhatsAppIcon({ className }: { className?: string }) {
   return (
     <img
-      src={whatsappIcon}
+      src={whatsappIcon.url}
       alt="WhatsApp"
       className={className}
     />
