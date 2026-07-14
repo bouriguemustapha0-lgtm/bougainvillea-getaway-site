@@ -149,9 +149,9 @@ const fr: Dict = {
   chat_whatsapp: "Discuter sur WhatsApp",
 
   home_hero_eyebrow: "Mohammedia · Casablanca-Settat · Maroc",
-  home_hero_title: "Une retraite tapissée de bougainvilliers, à quelques minutes de Casablanca.",
+  home_hero_title: "Une retraite de bougainvilliers, à deux pas de Casablanca.",
   home_hero_lead:
-    "Nichée à Sidi Moussa Ben Ali, Bougainvilla Retreat est l'endroit où les matinées commencent lentement au bord de la piscine, où le jasmin et les bougainvilliers parfument les allées, et où chaque petit-déjeuner est préparé avec soin. À seulement 43 km de Casablanca, à mille lieues de son agitation.",
+    "Havre paisible à Sidi Moussa Ben Ali. Piscine, jardin fleuri et petits-déjeuners soignés — à 43 km de Casablanca, loin de l'agitation.",
 
   home_why_eyebrow: "Pourquoi séjourner ici",
   home_why_title: "Le côté paisible de Casablanca, drapé de bougainvilliers.",
@@ -450,9 +450,9 @@ const en: Dict = {
   chat_whatsapp: "Chat on WhatsApp",
 
   home_hero_eyebrow: "Mohammedia · Casablanca-Settat · Morocco",
-  home_hero_title: "A bougainvillea-draped retreat, minutes from Casablanca.",
+  home_hero_title: "A bougainvillea retreat, minutes from Casablanca.",
   home_hero_lead:
-    "Tucked away in Sidi Moussa Ben Ali, Bougainvilla Retreat is where slow mornings begin by the pool, jasmine and bougainvillea scent the garden paths, and every breakfast is made with care. Just 43 km from Casablanca, yet a world away from the rush.",
+    "A quiet hideaway in Sidi Moussa Ben Ali. Pool, garden blooms and slow breakfasts — just 43 km from Casablanca, far from the rush.",
 
   home_why_eyebrow: "Why stay here",
   home_why_title: "A quieter side of Casablanca, wrapped in bougainvillea.",
