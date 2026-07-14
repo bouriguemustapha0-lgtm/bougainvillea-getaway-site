@@ -322,7 +322,7 @@ const fr: Dict = {
     "Une maison d'hôtes de charme à Sidi Moussa Ben Ali, Mohammedia, Maroc — avec piscine extérieure, jardin et petit-déjeuner halal.",
   footer_visit: "Visiter",
   footer_explore: "Explorer",
-  footer_book_direct: "Réserver en direct sur les OTA",
+  footer_book_direct: "Réserver en direct",
   footer_rights: "Tous droits réservés.",
 
   amenities: [
@@ -600,7 +600,7 @@ const en: Dict = {
     "A boutique guesthouse in Sidi Moussa Ben Ali, Mohammedia, Morocco — with an outdoor pool, garden, and halal breakfast.",
   footer_visit: "Visit",
   footer_explore: "Explore",
-  footer_book_direct: "Book direct on OTAs",
+  footer_book_direct: "Book direct",
   footer_rights: "All rights reserved.",
 
   amenities: [
