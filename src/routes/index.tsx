@@ -167,9 +167,9 @@ function Home() {
                 <div className="flex flex-1 flex-col p-6">
                   <h3 className="font-display text-2xl">{r.name}</h3>
                   <p className="mt-2 flex-1 text-sm text-muted-foreground">{r.blurb}</p>
-                  <a href={SITE.ota.booking} target="_blank" rel="noopener noreferrer" className="btn-primary mt-5 self-start text-sm">
+                  <Link to="/reservation" className="btn-primary mt-5 self-start text-sm">
                     {t("check_availability")}
-                  </a>
+                  </Link>
                 </div>
               </article>
             ))}
@@ -254,20 +254,20 @@ function Home() {
           </h2>
           <p className="mt-4 max-w-2xl text-primary-foreground/90">{t("home_cta_lead")}</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            {[
-              { label: t("book_on_booking"), href: SITE.ota.booking, key: "booking" },
-              { label: t("book_on_agoda"), href: SITE.ota.agoda, key: "agoda" },
-            ].map((b) => (
-              <a
-                key={b.key}
-                href={b.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center rounded-full bg-background/95 px-5 py-3 text-sm font-medium text-ink hover:bg-background"
-              >
-                {b.label}
-              </a>
-            ))}
+            <Link
+              to="/reservation"
+              className="inline-flex items-center rounded-full bg-background/95 px-5 py-3 text-sm font-medium text-ink hover:bg-background"
+            >
+              {t("book_now")}
+            </Link>
+            <a
+              href={SITE.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-full border border-background/60 px-5 py-3 text-sm font-medium text-primary-foreground hover:bg-background/10"
+            >
+              {t("chat_whatsapp")}
+            </a>
           </div>
         </div>
       </section>

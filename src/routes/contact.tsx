@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { Instagram, Facebook } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
@@ -35,10 +35,6 @@ export const Route = createFileRoute("/contact")({
 
 function ContactPage() {
   const t = useT();
-  const bookingLinks = [
-    { label: t("book_on_booking"), href: SITE.ota.booking, key: "booking" },
-    { label: t("book_on_agoda"), href: SITE.ota.agoda, key: "agoda" },
-  ];
   return (
     <Layout>
       <section className="border-b border-border bg-secondary/40 py-20">
@@ -81,14 +77,14 @@ function ContactPage() {
             </div>
           </dl>
 
-          <h2 className="mt-12 font-display text-3xl">{t("contact_book_otas")}</h2>
+          <h2 className="mt-12 font-display text-3xl">{t("book_now")}</h2>
           <div className="mt-4 flex flex-wrap gap-3">
-            {bookingLinks.map((b) => (
-              <a key={b.key} href={b.href} target="_blank" rel="noopener noreferrer"
-                 className={b.key === "booking" ? "btn-primary text-sm" : "btn-outline text-sm"}>
-                {b.label}
-              </a>
-            ))}
+            <Link to="/reservation" className="btn-primary text-sm">
+              {t("book_now")}
+            </Link>
+            <a href={SITE.whatsapp} target="_blank" rel="noopener noreferrer" className="btn-outline text-sm">
+              {t("chat_whatsapp")}
+            </a>
           </div>
 
           <h2 className="mt-12 font-display text-3xl">{t("contact_follow")}</h2>
