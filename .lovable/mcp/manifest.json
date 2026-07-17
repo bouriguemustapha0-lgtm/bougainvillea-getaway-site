@@ -1,0 +1,148 @@
+{
+  "version": 1,
+  "sdk_version": "0.23.0",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "bougainvilla-mcp",
+      "version": "0.1.0",
+      "title": "Bougainvilla Guesthouse"
+    },
+    "tools": [
+      {
+        "name": "get_guesthouse_info",
+        "title": "Get guesthouse info",
+        "description": "Return core public facts about Bougainvilla Guesthouse: name, location, contact, check-in/out times, rating, and booking links.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_rooms",
+        "title": "List rooms",
+        "description": "List every room type available at Bougainvilla Guesthouse with its features and description.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_amenities",
+        "title": "List amenities",
+        "description": "List the amenities and services offered at Bougainvilla Guesthouse (pool, garden, breakfast, parking, etc.).",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_faqs",
+        "title": "List FAQs",
+        "description": "Return frequently asked questions and answers about Bougainvilla Guesthouse (location, breakfast, pets, parking, check-in, distances, etc.).",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_distances",
+        "title": "Get distances to nearby landmarks",
+        "description": "Return distances from Bougainvilla Guesthouse to nearby landmarks (Casablanca airport, Hassan II Mosque, Morocco Mall, train stations, etc.).",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "build_whatsapp_booking_link",
+        "title": "Build WhatsApp booking link",
+        "description": "Build a pre-filled WhatsApp URL to send a booking inquiry to Bougainvilla Guesthouse. Returns a wa.me link with the guest name, party size and dates prefilled in the message.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Guest's full name."
+            },
+            "guests": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12,
+              "description": "Number of travelers (1-12)."
+            },
+            "arrival": {
+              "type": "string",
+              "description": "Arrival date in YYYY-MM-DD format."
+            },
+            "departure": {
+              "type": "string",
+              "description": "Departure date in YYYY-MM-DD format."
+            },
+            "language": {
+              "type": "string",
+              "enum": [
+                "fr",
+                "en"
+              ],
+              "description": "Message language: 'fr' or 'en'."
+            }
+          },
+          "required": [
+            "name",
+            "guests",
+            "arrival",
+            "departure",
+            "language"
+          ]
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
