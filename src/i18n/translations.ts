@@ -149,7 +149,7 @@ const fr: Dict = {
   chat_whatsapp: "Discuter sur WhatsApp",
 
   home_hero_eyebrow: "Mohammedia · Casablanca-Settat · Maroc",
-  home_hero_title: "Une retraite de bougainvilliers, à deux pas de Casablanca.",
+  home_hero_title: "Maison d'Hôtes avec Piscine entre Casablanca et Mohammedia",
   home_hero_lead:
     "Havre paisible à Sidi Moussa Ben Ali. Piscine, jardin fleuri et petits-déjeuners soignés — à 43 km de Casablanca, loin de l'agitation.",
 

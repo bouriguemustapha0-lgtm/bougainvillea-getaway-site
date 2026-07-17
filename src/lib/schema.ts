@@ -3,7 +3,7 @@ import { SITE, FAQS, AMENITIES } from "./site";
 export function lodgingSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "LodgingBusiness",
+    "@type": "BedAndBreakfast",
     name: SITE.name,
     description: SITE.descriptionShort,
     address: {
@@ -21,11 +21,18 @@ export function lodgingSchema() {
     },
     telephone: SITE.phone,
     email: SITE.email,
-    amenityFeature: AMENITIES.map((a) => ({
-      "@type": "LocationFeatureSpecification",
-      name: a.title,
-      value: true,
-    })),
+    amenityFeature: [
+      {
+        "@type": "LocationFeatureSpecification",
+        name: "Piscine extérieure",
+        value: true,
+      },
+      ...AMENITIES.map((a) => ({
+        "@type": "LocationFeatureSpecification",
+        name: a.title,
+        value: true,
+      })),
+    ],
     petsAllowed: true,
     servesCuisine: "Moroccan",
     checkinTime: "14:00",
