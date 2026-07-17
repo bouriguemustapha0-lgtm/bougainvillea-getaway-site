@@ -7,7 +7,7 @@ import roomImg from "@/assets/room.jpg";
 import terraceImg from "@/assets/terrace.jpg";
 import { SITE } from "@/lib/site";
 import { breadcrumbSchema, jsonLdScript, lodgingSchema } from "@/lib/schema";
-import { useLang, useT } from "@/i18n";
+import { useT } from "@/i18n";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -40,7 +40,7 @@ export const Route = createFileRoute("/")({
 
 function Home() {
   const t = useT();
-  const { lang } = useLang();
+  
   const amenities = t("amenities");
   const rooms = t("rooms");
   const faqs = t("faqs");
@@ -97,7 +97,7 @@ function Home() {
             </ul>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <img src={gardenImg} alt="" loading="lazy" width={1600} height={1100} className="col-span-2 aspect-[16/10] w-full rounded-2xl object-cover shadow-[var(--shadow-elegant)]" />
+            <img src={gardenImg} alt="maison-d-hotes-avec-piscine-casablanca" loading="lazy" width={1600} height={1100} className="col-span-2 aspect-[16/10] w-full rounded-2xl object-cover shadow-[var(--shadow-elegant)]" />
             <img src={terraceImg} alt="" loading="lazy" width={1600} height={1100} className="aspect-[4/5] w-full rounded-2xl object-cover" />
             <img src={breakfastImg} alt="" loading="lazy" width={1600} height={1100} className="aspect-[4/5] w-full rounded-2xl object-cover" />
           </div>
