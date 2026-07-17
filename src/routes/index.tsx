@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Layout } from "@/components/Layout";
 import heroAsset from "@/assets/hero-dome.jpg";
@@ -13,10 +12,21 @@ import { useLang, useT } from "@/i18n";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: `${SITE.name} | Maison d'hôtes de charme avec piscine — Mohammedia` },
-      { name: "description", content: SITE.descriptionShort },
-      { property: "og:title", content: `${SITE.name} | Maison d'hôtes, Mohammedia` },
-      { property: "og:description", content: SITE.descriptionShort },
+      { title: "Bougainvilla Retreat | Maison d'Hôtes avec Piscine près de Casablanca" },
+      {
+        name: "description",
+        content:
+          "Découvrez Bougainvilla Retreat, une magnifique maison d'hôtes avec piscine à Mohammedia et près de Casablanca. Réservez votre séjour de détente absolue.",
+      },
+      {
+        property: "og:title",
+        content: "Bougainvilla Retreat | Maison d'Hôtes avec Piscine près de Casablanca",
+      },
+      {
+        property: "og:description",
+        content:
+          "Découvrez Bougainvilla Retreat, une magnifique maison d'hôtes avec piscine à Mohammedia et près de Casablanca. Réservez votre séjour de détente absolue.",
+      },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -37,42 +47,7 @@ function Home() {
   const testimonials = t("testimonials");
   const distances = t("distances");
 
-  useEffect(() => {
-    if (document.getElementById("hotel-jsonld")) return;
-
-    const hotelSchema = {
-      "@context": "https://schema.org",
-      "@type": "Hotel",
-      name: SITE.name,
-      description: SITE.descriptionShort,
-      url: window.location.origin,
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: SITE.city,
-        addressCountry: "MA",
-      },
-      amenityFeature: [
-        { "@type": "LocationFeatureSpecification", name: "Outdoor pool", value: true },
-        { "@type": "LocationFeatureSpecification", name: "Sun terrace", value: true },
-      ],
-    };
-
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.id = "hotel-jsonld";
-    script.text = JSON.stringify(hotelSchema);
-    document.head.appendChild(script);
-
-    return () => {
-      const existing = document.getElementById("hotel-jsonld");
-      if (existing?.parentNode) existing.parentNode.removeChild(existing);
-    };
-  }, []);
-
-  const heroAlt =
-    lang === "fr"
-      ? "Bungalow dôme géodésique et piscine à Bougainvilla Retreat, Mohammedia Maroc"
-      : "Geodesic dome bungalow and swimming pool at Bougainvilla Retreat, Mohammedia Morocco";
+  const heroAlt = "piscine-a-mohammedia-bougainvilla";
 
   return (
     <Layout>
